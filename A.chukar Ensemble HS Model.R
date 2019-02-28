@@ -1,4 +1,4 @@
-# Creator: Austin M. Smith
+# Creator: Austin M. Smith (amsmith11@usf.edu)
 
 # Article to ESA journal:  Ecological Applications 
 
