@@ -28,7 +28,8 @@ library(gbm) #  used to build gradient boosted tree package
 library(nnet) # used to build neural network model 
 library(ggplot2) # graphing package 
 library(lattice) #?
-
+library(pROC)
+library(plyr)
 
 
 
@@ -190,7 +191,7 @@ model.corr<- modelCor(resamples(model.Ensemble.list))
 model.corr
 
 #Plot the correlation matrix for model.corr
-par(mar=c(1,1,1,1))
+par(mar=c(2,2,2,2))
 corrplot( model.corr, 
           order = "original" ,
           method = "number",
@@ -208,7 +209,7 @@ model.Ensemble <- caretEnsemble(model.Ensemble.list,
                                 metric="Accuracy",
                                 trControl = TrainingParameters ,
                                 preProcess = c( "scale", "center" ))
-summary(model.Ensemble)
+        
 
 
 
@@ -270,13 +271,14 @@ cm.model.test
 library("caTools")
 test.probs <- lapply(model.Ensemble.list, predict, newdata=test.Data, type="prob")
 test.probs <- lapply(test.probs, function(x) x[,"P"])
-test.probs <- data.frame(model.preds)
+test.probs <- data.frame(test.probs)
 ens.probs <- predict(model.Ensemble, newdata=test.Data, type="prob")
 test.probs$ensemble <- ens.probs
 par(mar=c(8,8,8,8))
-caTools::colAUC(model.preds, test.Data$Chukar.Occurrence, plotROC=TRUE) # creates ROC curves plots
+caTools::colAUC(test.probs, test.Data$Chukar.Occurrence, plotROC=TRUE) # creates ROC curves plots
 
 test.probs
+
 
 
 
@@ -314,11 +316,11 @@ Val.Ensemble
 
 
 # Pull from orginal WA.Data for comparative purposes
-True <- data.frame(OR.Data[22])
+True <- data.frame(OR.chukar[2], OR.Data[22])
 
 # Create single data.frame with all OR.ds P/A predictions
 Complete.results <- cbind.data.frame(True, Val.GLM, Val.SVM, Val.RF, Val.ANN, Val.GBM, Val.Ensemble )
-names(Complete.results) <- c( "True", "GLM", "SVM", "RF", "ANN", "GBM", "Ensemble" )
+names(Complete.results) <- c( "Quadname", "True", "GLM", "SVM", "RF", "ANN", "GBM", "Ensemble" )
 Complete.results
 
 write.csv(Complete.results,  "Complete resultsVal")
@@ -355,47 +357,11 @@ names(WA.probs) <- c(  "GLM",  "SVM", "RF", "ANN" , "GBM", "Ensemble")
 WA.probs
 
 
+# Create single data.frame with all WA probabilities 
+Complete.WA.Data <- cbind.data.frame(WA.Data[1], WA.probs )
+names(Complete.WA.Data) <- c( "Quadname",  "GLM", "SVM", "RF", "ANN", "GBM", "Ensemble" )
+Complete.WA.Data
 
-
-###-----------------------------------------------------------------------------------------------------------------------
-
-
-#### THE FOLLOWING IS MOST LIKELY NOT NECESSARY !!!!!!!
-
-
-# Run the test.Data through each model  
-WA.GLM.prob <- data.frame( predict( GLM  , newdata = WA.Data[1:22], type="prob" ))
-WA.SVM.prob <- data.frame( predict( SVM  ,  newdata = WA.Data[1:22], type="prob" ))
-WA.RF.prob  <-  data.frame( predict( RF  ,  newdata = WA.Data[1:22], type="prob" ))
-WA.ANN.prob <- data.frame( predict( ANN  , newdata = WA.Data[1:22], type="prob" ))
-WA.GBM.prob <- data.frame( predict( GBM  , newdata = WA.Data[1:22], type="prob"))
-
-WA.Ensemble.prob <- data.frame( predict( model.Ensemble , newdata = WA.Data[1:22], type="prob"))
-
-WA.EnsembleList.prob <- predict( model.Ensemble.list , newdata = WA.Data[1:22], type="prob")
-
-
-
-dim(WA.GLM.prob)
-dim(WA.SVM.prob)
-dim(WA.RF.prob)
-dim(WA.ANN.prob)
-dim(WA.GBM.prob)
-dim(WA.Ensemble.prob)
-
-
-
-
-
-# Compile outputs into a single data.frame for CSV export
-Probs.WA <- cbind.data.frame( WA.GLM.prob$P, WA.SVM.prob$P, WA.RF.prob$P,
-                              WA.ANN.prob$P, WA.GBM.prob$P, WA.Ensemble.prob$P)
-
-names(Probs.WA) <- c(  "GLM",  "SVM", "RF", "ANN" , "GBM", "Ensemble")
-Probs.WA
-
-write.csv(Probs.WA,  "Probs.WA")
-
-
+write.csv(Complete.WA.Data,  "Complete.WA.Data")
 
 ###-----------------------------------------------------------------------------------------------------------------------
