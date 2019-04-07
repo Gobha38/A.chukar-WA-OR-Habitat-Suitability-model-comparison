@@ -1,0 +1,86 @@
+Identification_Information:
+  Citation:
+    Citation_Information:
+      Originator: USDA/NRCS - National Geospatial Center of Excellence
+      Title: Map Index 7.5x7.5 1:24,000
+  Description:
+    Purpose: Vector dataset provides digital raster graphic (DRG) quad boundaries with attributes describing the quads.
+  Time_Period_of_Content:
+    Time_Period_Information:
+      Single_Date/Time:
+        Calendar_Date: 02/24/2003
+  Status:
+    Progress: Complete
+  Spatial_Domain:
+    Bounding_Coordinates:
+      West_Bounding_Coordinate: -124.60679
+      East_Bounding_Coordinate: -116.46326
+      North_Bounding_Coordinate: 46.29103
+      South_Bounding_Coordinate: 41.99179
+  Keywords:
+    Theme:
+      Theme_Keyword_Thesaurus: Standard for Geospatial Dataset File Naming
+      Theme_Keyword: Map Index, Quadrangles
+    Place:
+      Place_Keyword_Thesaurus: GNIS
+      Place_Keyword: Oregon
+      Place_Keyword: *
+  Use_Constraints:
+
+    The U.S. Department of Agriculture, Service Center Agencies should be acknowledged as the data source in products derived from these data.
+
+    This data set is not designed for use as a primary regulatory tool in permitting or citing decisions, but may be used as a reference source.  This information may be interpreted by organizations, agencies, units of government, or others based on needs; however, they are responsible for the appropriate application.  Federal, State, or local regulatory bodies are not to reassign to the Service Center Agencies any authority for the decisions that they make.  The Service Center Agencies will not perform any evaluations of these data for purposes related solely to State or local regulatory programs.
+
+    Photographic or digital enlargement of these data to scales greater than at which they were originally mapped can cause misinterpretation of the data.  Digital data files are periodically updated, and users are responsible for obtaining the latest version of the data.
+  Point_of_Contact:
+    Contact_Information:
+      Contact_Organization_Primary:
+        Contact_Organization: National Geospatial Center of Excellence
+      Contact_Address:
+        Address: 501 W. Felix St, Bldg 23
+        City: Fort Worth
+        State_or_Province: Texas
+        Postal_Code: 76115
+Data_Quality_Information:
+  Lineage:
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator:
+            USGS and NRCS
+          Publication_Date: 2002
+          Title: Quadrangle Index
+      Source_Scale_Denominator: Unknown
+    Process_Step:
+      Process_Description: Source: http://greenwood.cr.usgs.gov/pub/quad-indexes. Then NRCS-ITC converted to Lon/Lat NAD83. Forced all coordinates to nearest even increment of 7.5 minutes to remove precision problems from being re-projected. Updated quad name, add quad date field, add missing quads. Generate FIPS_C field of inside, crossing, touching counties.
+      Process_Date: 200712
+Spatial_Reference_Information:
+  Horizontal_Coordinate_System_Definition:
+    Geographic:
+      Latitude_Resolution: 0.02
+      Longitude_Resolution: 0.02
+      Geographic_Coordinate_Units: Decimal degrees
+    Geodetic_Model:
+      Horizontal_Datum_Name: World Geodetic System of 1984 (WGS84)
+      Ellipsoid_Name: WGS84
+      Semi-major_Axis: 6378137.0
+      Denominator_of_Flattening_Ratio: 298.257223563
+Entity_and_Attribute_Information:
+  Overview_Description:
+    Entity_and_Attribute_Overview:
+      Attributes in the index maps identify the file and quad names, quad scales, quad dates and locational FIPS code.  Geographic coordinates for the bottom, top, left and right sides of each quad are provided as well.
+    Entity_and_Attribute_Detail_Citation: Relevant attributes are:  QUADID - USGS latitude/longitude file name, QUADNAME - quad name, QUADDATE - date that appears on the paper quad,  CREDATE - USGS DRG production date, SOURCE-USGS source material date, North/South/East/West - Minimum bounding rectangle coordinates, FIPS_C - state and county 5-digit FIPS codes for the quad
+Distribution_Information:
+  Distribution_Liability:
+
+    Although these data have been processed successfully on a computer system at the U.S. Department of Agriculture, no warranty expressed or implied is made by the Service Center Agencies regarding the utility of the data on any other system, nor shall the act of distribution constitute any such warranty.  The U.S. Department of Agriculture will warrant the delivery of this product in computer readable format, and will offer appropriate adjustment of credit when the product is determined unreadable by correctly adjusted computer input peripherals, or when the physical medium is delivered in damaged condition.  Request for adjustment of credit must be made within 90 days from the date of this shipment from the ordering site.
+
+    Neither the U.S. Department of Agriculture, nor any of its agencies are liable for misuse of the data, for damage, for transmission of viruses, or for computer contamination through the distribution of these data sets.  The U.S. Department of Agriculture prohibits discrimination in all its programs and activities on the basis of race, color, national origin, sex, religion, age, disability, political beliefs, sexual orientation, or marital or family status. (Not all prohibited bases apply to all programs.)
+  Standard_Order_Process:
+    Digital_Form:
+      Digital_Transfer_Information:
+        Format_Name: ARC/INFO Shape
+Metadata_Reference_Information:
+  Metadata_Date: 01/21/2019
+  Metadata_Standard_Name: SCI Minimum Compliance Metadata
+  Metadata_Standard_Version: SCI Std 003-02
