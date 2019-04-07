@@ -1,5 +1,5 @@
 # Author: Austin M. Smith, M.Sc
-.# Title:  Chukar Habitat Model 
+# Geospatial work to extract data for Chukar Habitat Model 
 
 
 ######## ########  Geospatial Packages ######## ########
@@ -28,6 +28,13 @@ library(tmap)
 library(maps)
 
 
+######## ########  Set working directory ######## ########
+
+# set wd so files can be pulled 
+setwd('/Users/austinsmith/Dropbox/Wendell_Austin_Mike\ GBs/Austin\ Thesis/Chukar\ Suitability\ Model')
+#setwd('/Users/austinsmith/Desktop/Chukar\ Suitability\ Model')
+
+
 
 ######## ########  Landcover Raster File ######## ########
 ######## ########  ##########################  ######## ########
@@ -35,7 +42,7 @@ library(maps)
 
 # Import LCT Raster 
 
-LCTR <- raster("/Users/Austin/Downloads/LCType.tif", values = TRUE)  # From macbook
+LCTR <- raster("./LCType.tif", values = TRUE)  
 #LCTR
 
 
@@ -62,8 +69,10 @@ plot(LCTR, col = LCcolors,
 
 ##### USGS 1:24,000 Quadrangle Polygon
 
-Quad24_WA <-readShapePoly("/Users/Austin/Downloads/map_indexes_QD24K_wa_3658291_01/map_indexes\\quads24k_a_wa.shp")
-Quad24_WA
+Quad24_WA <-readShapePoly("./map_indexes_QD24K_wa_3666222_01/map_indexes\\quads24k_a_wa.shp")
+
+
+Quad24_WA$QUADNAME
 
 # Check  crs of layer
 # should come up NA - Set to  Model_CRS
@@ -237,28 +246,31 @@ Datacb2
 ######## ########  #####################  ######## ########
 
 
+
+myData <- read.csv('./data/myCsvFile.csv')
+
 # Variables most signficant to Chukar establishment 
-Bio1 <- raster('/Users/Austin/Downloads/wc2-5/wc2.0_bio_10m_01.tif') # Annual Mean Temperature
-Bio5 <- raster('/Users/Austin/Downloads/wc2-5/wc2.0_bio_10m_05.tif') # Max Temperature of Warmest Month
-Bio6 <- raster('/Users/Austin/Downloads/wc2-5/wc2.0_bio_10m_06.tif') # Min Temperature of Coldest Month
-Bio12 <- raster('/Users/Austin/Downloads/wc2-5/wc2.0_bio_10m_12.tif')# Annual Precipitation
+Bio1 <- raster('./wc2/wc2.0_bio_10m_01.tif') # Annual Mean Temperature
+Bio5 <- raster('./wc2/wc2.0_bio_10m_05.tif') # Max Temperature of Warmest Month
+Bio6 <- raster('./wc2/wc2.0_bio_10m_06.tif') # Min Temperature of Coldest Month
+Bio12 <- raster('./wc2/wc2.0_bio_10m_12.tif')# Annual Precipitation
 
 # additional variables to consider 
-Bio2 <- raster('/Users/Austin/Downloads/wc2-5/wc2.0_bio_10m_02.tif') # Mean Diurnal Range (Mean of monthly (max temp - min temp))
-Bio3 <- raster('/Users/Austin/Downloads/wc2-5/wc2.0_bio_10m_03.tif') # Isothermality (BIO2/BIO7) (* 100)
-Bio4 <- raster('/Users/Austin/Downloads/wc2-5/wc2.0_bio_10m_04.tif') # Temperature Seasonality (standard deviation *100)
-Bio7 <- raster('/Users/Austin/Downloads/wc2-5/wc2.0_bio_10m_07.tif') # Temperature Annual Range (BIO5-BIO6)
-Bio8 <- raster('/Users/Austin/Downloads/wc2-5/wc2.0_bio_10m_08.tif') #  Mean Temperature of Wettest Quarter
-Bio9 <- raster('/Users/Austin/Downloads/wc2-5/wc2.0_bio_10m_09.tif') # Mean Temperature of Driest Quarter
-Bio10 <- raster('/Users/Austin/Downloads/wc2-5/wc2.0_bio_10m_10.tif') # Mean Temperature of Warmest Quarter
-Bio11 <- raster('/Users/Austin/Downloads/wc2-5/wc2.0_bio_10m_11.tif') # Mean Temperature of Coldest Quarter
-Bio13 <- raster('/Users/Austin/Downloads/wc2-5/wc2.0_bio_10m_13.tif') # Precipitation of Wettest Month
-Bio14 <- raster('/Users/Austin/Downloads/wc2-5/wc2.0_bio_10m_14.tif') # Precipitation of Driest Month
-Bio15 <- raster('/Users/Austin/Downloads/wc2-5/wc2.0_bio_10m_15.tif') # Precipitation Seasonality (Coefficient of Variation)
-Bio16 <- raster('/Users/Austin/Downloads/wc2-5/wc2.0_bio_10m_16.tif') # Precipitation of Wettest Quarter
-Bio17 <- raster('/Users/Austin/Downloads/wc2-5/wc2.0_bio_10m_17.tif') # Precipitation of Driest Quarter
-Bio18 <- raster('/Users/Austin/Downloads/wc2-5/wc2.0_bio_10m_18.tif') # Precipitation of Warmest Quarter
-Bio19 <- raster('/Users/Austin/Downloads/wc2-5/wc2.0_bio_10m_19.tif') # Precipitation of Coldest Quarter
+Bio2 <- raster('./wc2/wc2.0_bio_10m_02.tif') # Mean Diurnal Range (Mean of monthly (max temp - min temp))
+Bio3 <- raster('./wc2/wc2.0_bio_10m_03.tif') # Isothermality (BIO2/BIO7) (* 100)
+Bio4 <- raster('./wc2/wc2.0_bio_10m_04.tif') # Temperature Seasonality (standard deviation *100)
+Bio7 <- raster('./wc2/wc2.0_bio_10m_07.tif') # Temperature Annual Range (BIO5-BIO6)
+Bio8 <- raster('./wc2/wc2.0_bio_10m_08.tif') #  Mean Temperature of Wettest Quarter
+Bio9 <- raster('./wc2/wc2.0_bio_10m_09.tif') # Mean Temperature of Driest Quarter
+Bio10 <- raster('./wc2/wc2.0_bio_10m_10.tif') # Mean Temperature of Warmest Quarter
+Bio11 <- raster('./wc2/wc2.0_bio_10m_11.tif') # Mean Temperature of Coldest Quarter
+Bio13 <- raster('./wc2/wc2.0_bio_10m_13.tif') # Precipitation of Wettest Month
+Bio14 <- raster('./wc2/wc2.0_bio_10m_14.tif') # Precipitation of Driest Month
+Bio15 <- raster('./wc2/wc2.0_bio_10m_15.tif')# Precipitation Seasonality (Coefficient of Variation)
+Bio16 <- raster('./wc2/wc2.0_bio_10m_16.tif') # Precipitation of Wettest Quarter
+Bio17 <- raster('./wc2/wc2.0_bio_10m_17.tif') # Precipitation of Driest Quarter
+Bio18 <- raster('./wc2/wc2.0_bio_10m_18.tif') # Precipitation of Warmest Quarter
+Bio19 <- raster('./wc2/wc2.0_bio_10m_19.tif') # Precipitation of Coldest Quarter
 
 
 # Extract/ Calculate bio layers measurements for quad-layer 
