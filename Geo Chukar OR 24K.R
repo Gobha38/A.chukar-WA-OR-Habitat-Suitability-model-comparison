@@ -1,5 +1,14 @@
 # Author: Austin M. Smith, M.Sc
-.# Title:  Chukar Habitat Model 
+# Title:  Chukar Habitat Model 
+
+
+
+###################################################
+### code chunk number 1: clear
+###################################################
+
+
+rm(list=ls(all=TRUE))
 
 
 ######## ########  Geospatial Packages ######## ########
@@ -28,13 +37,6 @@ library(tmap)
 library(maps)
 
 
-######## ########  Set working directory ######## ########
-
-# set wd so files can be pulled 
-setwd('/Users/austinsmith/Dropbox/Wendell_Austin_Mike\ GBs/Austin\ Thesis/Chukar\ Suitability\ Model')
-#setwd('/Users/austinsmith/Desktop/Chukar\ Suitability\ Model')
-
-
 
 ######## ########  Landcover Raster File ######## ########
 ######## ########  ##########################  ######## ########
@@ -42,7 +44,7 @@ setwd('/Users/austinsmith/Dropbox/Wendell_Austin_Mike\ GBs/Austin\ Thesis/Chukar
 
 # Import LCT Raster 
 
-LCTR <- raster("./LCType.tif", values = TRUE)  
+LCTR <- raster("/Users/Austin/Downloads/LCType.tif", values = TRUE)  # From macbook
 #LCTR
 
 
@@ -69,7 +71,7 @@ Model_CRS <- crs(LCTR)
 
 ##### USGS 1:24,000 Quadrangle Polygon
 
-Quad24_OR <-readShapePoly("./map_indexes_QD24K_or_3667989_01/map_indexes\\quads24k_a_or.shp")
+Quad24_OR <-readShapePoly("/Users/Austin/Downloads/map_indexes_QD24K_or_3669477_01/map_indexes\\quads24k_a_or.shp")
 Quad24_OR
 
 # Check  crs of layer
@@ -145,6 +147,7 @@ Sheet1OR<- data.frame(tabs%>%
 
 #Sheet1OR # check sheet
 
+
 ### 
 wat <- aggregate(WAT~name,data=Sheet1OR,FUN=sum)
 enfor <- aggregate(EN_FOR~name,data=Sheet1OR,FUN=sum)
@@ -218,7 +221,7 @@ class(e2)  # a list
 length(e2) 
 
 ### Create Tables of collected data ###
-lappl
+#lappl
 
 #Elevation Maximun per quad
 tabs_elevMax<-lapply(seq(e2max), tabFunc, e2max, Quad24_OR, "QUADNAME")
@@ -250,7 +253,7 @@ Datacb1
 
 
 ### Next, slope and aspect are calculated.
-### Both are ecologicially signifiant variables 
+### Both are ecologicially signifiant variables to Chukar studies
 ### These are claculated thru the 'raster' package 
 
 
@@ -304,7 +307,6 @@ Bio16 <- raster('./wc2/wc2.0_bio_10m_16.tif') # Precipitation of Wettest Quarter
 Bio17 <- raster('./wc2/wc2.0_bio_10m_17.tif') # Precipitation of Driest Quarter
 Bio18 <- raster('./wc2/wc2.0_bio_10m_18.tif') # Precipitation of Warmest Quarter
 Bio19 <- raster('./wc2/wc2.0_bio_10m_19.tif') # Precipitation of Coldest Quarter
-
 
 
 # Extract/ Calculate bio layers measurements for quad-layer 
@@ -369,7 +371,7 @@ CLIM
 Datacb3 <- merge( Datacb2, CLIM, by = "name", all = TRUE )
 Datacb3
 
-write.csv(Datacb3, "Chukar Variables OR 24")
+write.csv(Datacb3, "A.chukar-Variables-OR-24K")
 
 detach(package:tidyr, unload=TRUE)
 ##########################################################################
@@ -401,3 +403,9 @@ detach(package:tidyr, unload=TRUE)
 
 #WAds <- merge( Datacb3, AcOCC, by = "name", all = TRUE )
 #Datacb2
+
+
+##########################################################################
+
+save.image('Geospatial-A.chukar-24K-OR.rda')
+

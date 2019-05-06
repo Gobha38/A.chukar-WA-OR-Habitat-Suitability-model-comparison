@@ -2,6 +2,15 @@
 # Geospatial work to extract data for Chukar Habitat Model 
 
 
+
+###################################################
+### code chunk number 1: clear
+###################################################
+
+
+rm(list=ls(all=TRUE))
+
+
 ######## ########  Geospatial Packages ######## ########
 
 # data processing
@@ -40,7 +49,8 @@ setwd('/Users/austinsmith/Dropbox/Wendell_Austin_Mike\ GBs/Austin\ Thesis/Chukar
 ######## ########  ##########################  ######## ########
 
 
-# Import LCT Raster 
+# Import Land Cover Type Raster (MODIS)
+
 
 LCTR <- raster("./LCType.tif", values = TRUE)  
 #LCTR
@@ -80,11 +90,12 @@ crs(Quad24_WA) <- Model_CRS
 
 Quad24_WA  # Check if "coord. ref." updated
 
+
 ### Plot 24K WA to Global Map
 
 # Plot Files around WA
-# Will look off, especially using zoom function in RStudio
-# Need to fix this 
+# Will look off when using zoom function in RStudio
+
 
 plot(LCTR, 
      axes = FALSE,
@@ -132,7 +143,7 @@ tabs$Var1<-factor(tabs$Var1, levels=c(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16),
 
 # Organize data into sheet (like excel)
 library(tidyr)
-Sheet1<- data.frame(tabs%>%
+LAND <- data.frame(tabs%>%
                       group_by(name) %>% # group by region
                       mutate(totcells=sum(Freq), # how many cells overall
                              #percent.area=round(1*Freq/1,2)) %>%
@@ -142,7 +153,40 @@ Sheet1<- data.frame(tabs%>%
                       spread(key=Var1, value=percent.area, fill=0)
 )# make wide format
 
-Sheet1 # check sheet
+LAND# check sheet
+
+
+### 
+wat <- aggregate(WAT~name,data= LAND, FUN=sum)
+enfor <- aggregate(EN_FOR~name, data= LAND, FUN=sum)
+ebfor <- aggregate(EB_FOR~name, data= LAND, FUN=sum)
+dnfor <- aggregate(DN_FOR~name, data= LAND, FUN=sum)
+dbfor <- aggregate(DB_FOR~name, data= LAND, FUN=sum)
+mixfor <- aggregate(MIX_FOR~name, data= LAND, FUN=sum)
+
+clshb <- aggregate(CL_SHB~name, data= LAND, FUN=sum)
+opshb <- aggregate(OP_SHB~name, data= LAND, FUN=sum)
+woodsav <- aggregate(WOOD_SAV~name, data= LAND, FUN=sum)
+sav <- aggregate(SAV~name, data= LAND, FUN=sum)
+gra <- aggregate(GRA~name, data= LAND, FUN=sum)
+
+wetl <- aggregate(WETL~name, data= LAND, FUN=sum)
+crop <- aggregate(CROP~name, data= LAND, FUN=sum)
+urb <- aggregate(URB~name, data= LAND, FUN=sum)
+natcrop <- aggregate(NAT_CROP~name, data= LAND, FUN=sum)
+snow <- aggregate(SNOW~name, data= LAND, FUN=sum)
+bar <- aggregate(BAR~name, data= LAND, FUN=sum)
+
+Sheet1 <- Reduce(function(x, y) merge(x, y, all=TRUE), 
+                 list( wat, enfor, ebfor, dnfor, dbfor, mixfor,
+                       clshb, opshb, woodsav, sav, gra,
+                       wetl, crop, urb, natcrop, snow, bar) )
+
+
+
+Sheet1
+
+
 
 detach(package:tidyr, unload=TRUE)
 
@@ -182,7 +226,7 @@ class(e2)  # a list
 length(e2) 
 
 ### Create Tables of collected data ###
-lappl
+#lappl
 
 #Elevation Maximun per quad
 tabs_elevMax<-lapply(seq(e2max), tabFunc, e2max, Quad24_WA, "QUADNAME")
@@ -208,13 +252,13 @@ ELEV <- ELEV[c(1,2,4,6)]
 ELEV
 
 
-Datacb1 <- merge( Sheet1, ELEV, by = "name", all = TRUE )
+Datacb1 <- merge( LAND, ELEV, by = "name", all = TRUE )
 Datacb1
 #write.csv(Datacb1, "Data sample 1")
 
 
 ### Next, slope and aspect are calculated.
-### Both are ecologicially signifiant variables 
+### Both are ecologicially signifiant variables to Chukar studies 
 ### These are claculated thru the 'raster' package 
 
 
@@ -247,7 +291,7 @@ Datacb2
 
 
 
-myData <- read.csv('./data/myCsvFile.csv')
+#myData <- read.csv('./data/myCsvFile.csv')  ????? I can't reemebr what this is for
 
 # Variables most signficant to Chukar establishment 
 Bio1 <- raster('./wc2/wc2.0_bio_10m_01.tif') # Annual Mean Temperature
@@ -331,39 +375,42 @@ CLIM
 #names(CLIM) <- c("name", "TMAX", "TAVG", "TMIN", "PREC" )
 #CLIM
 
-# Add CLIM data to Sheet1 (Landcover data)
+# Add CLIM data to Datacb2 (LAND + ELEV + Slope)
 Datacb3 <- merge( Datacb2, CLIM, by = "name", all = TRUE )
 Datacb3
 
-write.csv(Datacb3, "Chukar Variables")
+write.csv(Datacb3, "A.chukar-Variables-WA-24K")
 
 detach(package:tidyr, unload=TRUE)
+
+
 ##########################################################################
 
-library(corrplot)
+# library(corrplot)
+# 
+# A <- as.matrix( CLIM[ 2:20 ] ) 
+# A <- as.matrix( Datacb3[ 2:43 ] )
+# A <- as.matrix( Datacb3 )
+# A <- mapply(A, FUN=as.numeric)
+# A<- matrix(data=A, ncol=42, nrow=1421)
+# 
+# 
+# typeof(A)
+# 
+# #chukar P/A 
+# 
+# Corr_A<- cor(A, use="complete.obs")
+# 
+# corrplot( cor( Corr_A ), 
+#           order = "original" ,  
+#           tl.col = 'blue', 
+#           tl.cex = .75 ,
+#           addCoefasPercent = TRUE , 
+#           title = "Correlation Between Input Variables" 
+# )
 
-A <- as.matrix( CLIM[ 2:20 ] ) 
-A <- as.matrix( Datacb3[ 2:43 ] )
-A <- as.matrix( Datacb3 )
-A <- mapply(A, FUN=as.numeric)
-A<- matrix(data=A, ncol=42, nrow=1421)
 
+##########################################################################
 
-typeof(A)
+save.image('Geospatial-A.chukar-24K-WA.rda')
 
-#chukar P/A 
-
-Corr_A<- cor(A, use="complete.obs")
-
-corrplot( cor( Corr_A ), 
-          order = "original" ,  
-          tl.col = 'blue', 
-          tl.cex = .75 ,
-          addCoefasPercent = TRUE , 
-          title = "Correlation Between Input Variables" 
-)
-
-pca()
-
-WAds <- merge( Datacb3, AcOCC, by = "name", all = TRUE )
-Datacb2
