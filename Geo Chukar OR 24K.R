@@ -7,6 +7,7 @@
 ### code chunk number 1: clear
 ###################################################
 
+setwd("~/Desktop/A.chukar-WA-OR-Habitat-Suitability-model-comparison-master")
 
 rm(list=ls(all=TRUE))
 
@@ -44,7 +45,7 @@ library(maps)
 
 # Import LCT Raster 
 
-LCTR <- raster("/Users/Austin/Downloads/LCType.tif", values = TRUE)  # From macbook
+LCTR <- raster("/LCType.tif", values = TRUE)  # From macbook
 #LCTR
 
 
