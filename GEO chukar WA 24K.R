@@ -41,6 +41,7 @@ library(maps)
 
 # set wd so files can be pulled 
 setwd('/Users/austinsmith/Dropbox/Wendell_Austin_Mike\ GBs/Austin\ Thesis/Chukar\ Suitability\ Model')
+setwd('/Users/austinsmith/Dropbox/Wendell_Austin_Mike\ GBs/Austin\ Thesis/Chukar\ Suitability\ Model')
 #setwd('/Users/austinsmith/Desktop/Chukar\ Suitability\ Model')
 
 
