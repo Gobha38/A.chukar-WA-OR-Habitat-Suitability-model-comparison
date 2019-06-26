@@ -35,14 +35,13 @@ library(spatial)
 # other 
 library(tmap)
 library(maps)
-
+#library(tictoc)
 
 ######## ########  Set working directory ######## ########
 
 # set wd so files can be pulled 
-setwd('/Users/austinsmith/Dropbox/Wendell_Austin_Mike\ GBs/Austin\ Thesis/Chukar\ Suitability\ Model')
-setwd('/Users/austinsmith/Dropbox/Wendell_Austin_Mike\ GBs/Austin\ Thesis/Chukar\ Suitability\ Model')
-#setwd('/Users/austinsmith/Desktop/Chukar\ Suitability\ Model')
+#setwd('/Users/austinsmith/Dropbox/Wendell_Austin_Mike\ GBs/Austin\ Thesis/Chukar\ Suitability\ Model')
+#setwd('/Users/Austin/Desktop/A.chukar-WA-OR-Habitat-Suitability-model-comparison-master')
 
 
 
@@ -98,13 +97,13 @@ Quad24_WA  # Check if "coord. ref." updated
 # Will look off when using zoom function in RStudio
 
 
-plot(LCTR, 
-     axes = FALSE,
-     box = FALSE,
-     col = LCcolors, xlim=c(-124.75, -116.875), ylim=c(45.5, 49),
-     legend = FALSE)
-
-plot(Quad24_WA, add =TRUE)
+# plot(LCTR, 
+#      axes = FALSE,
+#      box = FALSE,
+#      col = LCcolors, xlim=c(-124.75, -116.875), ylim=c(45.5, 49),
+#      legend = FALSE)
+# 
+# plot(Quad24_WA, add =TRUE)
 
 
 
@@ -144,7 +143,7 @@ tabs$Var1<-factor(tabs$Var1, levels=c(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16),
 
 # Organize data into sheet (like excel)
 library(tidyr)
-LAND <- data.frame(tabs%>%
+LAND1 <- data.frame(tabs%>%
                       group_by(name) %>% # group by region
                       mutate(totcells=sum(Freq), # how many cells overall
                              #percent.area=round(1*Freq/1,2)) %>%
@@ -154,38 +153,38 @@ LAND <- data.frame(tabs%>%
                       spread(key=Var1, value=percent.area, fill=0)
 )# make wide format
 
-LAND# check sheet
+LAND1# check sheet
 
 
 ### 
-wat <- aggregate(WAT~name,data= LAND, FUN=sum)
-enfor <- aggregate(EN_FOR~name, data= LAND, FUN=sum)
-ebfor <- aggregate(EB_FOR~name, data= LAND, FUN=sum)
-dnfor <- aggregate(DN_FOR~name, data= LAND, FUN=sum)
-dbfor <- aggregate(DB_FOR~name, data= LAND, FUN=sum)
-mixfor <- aggregate(MIX_FOR~name, data= LAND, FUN=sum)
+wat <- aggregate(WAT~name,data= LAND1, FUN=sum)
+enfor <- aggregate(EN_FOR~name, data= LAND1, FUN=sum)
+ebfor <- aggregate(EB_FOR~name, data= LAND1, FUN=sum)
+dnfor <- aggregate(DN_FOR~name, data= LAND1, FUN=sum)
+dbfor <- aggregate(DB_FOR~name, data= LAND1, FUN=sum)
+mixfor <- aggregate(MIX_FOR~name, data= LAND1, FUN=sum)
 
-clshb <- aggregate(CL_SHB~name, data= LAND, FUN=sum)
-opshb <- aggregate(OP_SHB~name, data= LAND, FUN=sum)
-woodsav <- aggregate(WOOD_SAV~name, data= LAND, FUN=sum)
-sav <- aggregate(SAV~name, data= LAND, FUN=sum)
-gra <- aggregate(GRA~name, data= LAND, FUN=sum)
+clshb <- aggregate(CL_SHB~name, data= LAND1, FUN=sum)
+opshb <- aggregate(OP_SHB~name, data= LAND1, FUN=sum)
+woodsav <- aggregate(WOOD_SAV~name, data= LAND1, FUN=sum)
+sav <- aggregate(SAV~name, data= LAND1, FUN=sum)
+gra <- aggregate(GRA~name, data= LAND1, FUN=sum)
 
-wetl <- aggregate(WETL~name, data= LAND, FUN=sum)
-crop <- aggregate(CROP~name, data= LAND, FUN=sum)
-urb <- aggregate(URB~name, data= LAND, FUN=sum)
-natcrop <- aggregate(NAT_CROP~name, data= LAND, FUN=sum)
-snow <- aggregate(SNOW~name, data= LAND, FUN=sum)
-bar <- aggregate(BAR~name, data= LAND, FUN=sum)
+wetl <- aggregate(WETL~name, data= LAND1, FUN=sum)
+crop <- aggregate(CROP~name, data= LAND1, FUN=sum)
+urb <- aggregate(URB~name, data= LAND1, FUN=sum)
+natcrop <- aggregate(NAT_CROP~name, data= LAND1, FUN=sum)
+snow <- aggregate(SNOW~name, data= LAND1, FUN=sum)
+bar <- aggregate(BAR~name, data= LAND1, FUN=sum)
 
-Sheet1 <- Reduce(function(x, y) merge(x, y, all=TRUE), 
+LAND <- Reduce(function(x, y) merge(x, y, all=TRUE), 
                  list( wat, enfor, ebfor, dnfor, dbfor, mixfor,
                        clshb, opshb, woodsav, sav, gra,
                        wetl, crop, urb, natcrop, snow, bar) )
 
 
 
-Sheet1
+LAND
 
 
 

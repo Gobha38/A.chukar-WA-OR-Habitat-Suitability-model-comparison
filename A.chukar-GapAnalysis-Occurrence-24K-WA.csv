@@ -1,0 +1,1422 @@
+#,name,Chukar.Occurrence,Galbreath,Chukar.Occurrence.Regression
+1,Abercrombie Mountain,A,N,0
+2,Aberdeen,A,N,0
+3,Aberdeen Gardens,A,N,0
+4,Aberdeen SE,A,N,0
+5,Abernathy Mountain,A,N,0
+6,Acme,A,Y,0
+7,Adams Mountain,A,Y,0
+8,Addy,A,Y,0
+9,Addy Mountain,A,Y,0
+10,Adna,A,N,0
+11,Aeneas,A,Y,0
+12,Aeneas Lake,P,Y,1
+13,Agnes Mountain,A,N,0
+14,Airway Heights,A,Y,0
+15,Aladdin,A,Y,0
+16,Aladdin Mountain,A,N,0
+17,Alameda Flat,P,Y,1
+18,Albion,A,Y,0
+19,Alger,A,Y,0
+20,Allens Bay,A,Y,0
+21,Almira,P,Y,1
+22,Almira SE,P,Y,1
+23,Almira SW,P,Y,1
+24,Almota,P,Y,1
+25,Alpowa Ridge,P,Y,1
+26,Alstown,P,Y,1
+27,Amber,A,Y,0
+28,Amboy,A,Y,0
+29,Anacortes North,A,Y,0
+30,Anacortes South,A,Y,0
+31,Anatone,P,Y,1
+32,Anderson Creek,A,N,0
+33,Anderson Lake,A,N,0
+34,Angeles Point,A,Y,0
+35,Appledale,P,Y,1
+36,Appleton,A,Y,0
+37,Arden,A,Y,0
+38,Ardenvoir,P,N,1
+39,Ariel,A,Y,0
+40,Arlington,A,N,0
+41,Arlington East,A,N,0
+42,Arlington West,A,N,0
+43,Armstrong Creek,P,Y,1
+44,Ashford,A,Y,0
+45,Ashnola Mountain,P,Y,1
+46,Ashnola Pass,P,Y,1
+47,Asotin,P,Y,1
+48,Astoria,A,N,0
+49,Auburn,A,N,0
+50,Ayer,P,Y,1
+51,Azurite Peak,A,Y,0
+52,Azwell,P,N,1
+53,Babcock Ridge,P,Y,1
+54,Bacon Peak,A,Y,0
+55,Badger Gap,P,Y,1
+56,Badger Mountain,P,Y,1
+57,Bailey Creek,A,Y,0
+58,Baker Pass,A,Y,0
+59,Bald Hill,A,Y,0
+60,Bald Knob,A,N,0
+61,Baldy Mountain,P,N,1
+62,Bandera,A,N,0
+63,Bangs Mountain,A,N,0
+64,Bare Mountain,A,N,0
+65,Baring,A,N,0
+66,Barker Canyon,P,Y,1
+67,Barker Mountain,P,Y,1
+68,Barnes Butte,P,Y,1
+69,Basin City,P,Y,1
+70,Bassett Junction,P,Y,1
+71,Battle Ground,A,Y,0
+72,Batum,P,Y,1
+73,Bauerman Ridge,P,Y,1
+74,Bay Center,A,N,0
+75,Beacon Rock,A,N,0
+76,Bead Lake,A,N,0
+77,Bear Mountain,A,N,0
+78,Bearhead Mountain,A,Y,0
+79,Bearpaw Mountain,A,Y,0
+80,Bedal,A,N,0
+81,Belfair,A,N,0
+82,Bellingham North,A,Y,0
+83,Bellingham South,A,Y,0
+84,Belshazzar Mountain,A,Y,0
+85,Belvedere,P,Y,1
+86,Benchmark Mountain,A,N,0
+87,Benge,A,Y,0
+88,Benjamin Lake,A,Y,0
+89,Benton City,P,Y,1
+90,Bernier Creek,A,N,0
+91,Bertrand Creek,A,Y,0
+92,Beverly,P,Y,1
+93,Beverly NE,P,Y,1
+94,Beverly SE,P,Y,1
+95,Bickleton,A,Y,0
+96,Bickleton NW,A,Y,0
+97,Big Devil Peak,A,Y,0
+98,Big Goat Mountain,P,N,1
+99,Big Huckleberry Mountain,A,N,0
+100,Big Jim Mountain,P,N,1
+101,Big Snow Mountain,A,N,0
+102,Biggs Junction,A,N,0
+103,Billy Goat Mountain,A,Y,0
+104,Birch Point,A,Y,0
+105,Black Butte,P,Y,1
+106,Black Diamond,A,N,0
+107,Black Rock Spring,P,Y,1
+108,Black Rock Spring NE,P,Y,1
+109,Black Rock Spring NW,P,Y,1
+110,Black Rock Spring SW,A,Y,0
+111,Blackhorse Canyon,A,Y,0
+112,Blaine,A,Y,0
+113,Blanca Lake,A,N,0
+114,Blaney Creek,A,N,0
+115,Blewett,P,N,1
+116,Blewett Pass,P,N,1
+117,Blowout Mountain,A,Y,0
+118,Blue Buck Mountain,P,Y,1
+119,Blue Goat Mountain,P,Y,1
+120,Blue Lake,A,N,0
+121,Blue Mountain,A,N,0
+122,Bluelight,A,Y,0
+123,Bluelight NW,A,Y,0
+124,Bluestem,A,Y,0
+125,Boardman,P,N,1
+126,Bob Creek,A,N,0
+127,Bobs Mountain,A,N,0
+128,Bodie,A,Y,0
+129,Bodie Mountain,A,N,0
+130,Bogachiel Peak,A,Y,0
+131,Boistfort,A,N,0
+132,Boistfort Peak,A,N,0
+133,Bone Spring,P,N,1
+134,Bonneville Dam,A,N,0
+135,Boot Mountain,P,Y,1
+136,Bossburg,A,Y,0
+137,Bothell,A,N,0
+138,Boundary,A,Y,0
+139,Boundary Dam,A,N,0
+140,Boundary Mountain,A,N,0
+141,Bow,A,Y,0
+142,Boyds,A,N,0
+143,Boyer Mountain,A,N,0
+144,Boylston,P,Y,1
+145,Bremerton East,A,N,0
+146,Bremerton West,A,N,0
+147,Brewster,P,Y,1
+148,Bridal Veil,A,N,0
+149,Bridgeport,P,Y,1
+150,Bridgeport Point,P,Y,1
+151,Brief,P,N,1
+152,Brinnon,A,N,0
+153,Broadax Draw,P,Y,1
+154,Brooklyn,A,N,0
+155,Browns Lake,A,N,0
+156,Bruce,P,Y,1
+157,Buck Mountain,P,Y,1
+158,Buckhorn Mountain,A,Y,0
+159,Buckley,A,Y,0
+160,Bucoda,A,N,0
+161,Bulldog Mountain,A,N,0
+162,Bullfrog Mountain,P,Y,1
+163,Bumping Lake,A,Y,0
+164,Bunch Lake,A,N,0
+165,Burge Mountain,P,Y,1
+166,Burley,A,N,0
+167,Burnt Hill,A,N,0
+168,Burnt Peak,A,N,0
+169,Buroker,P,Y,1
+170,Burr Canyon,P,Y,1
+171,Cahill Mountain,P,Y,1
+172,Cairn Hope Peak,P,Y,1
+173,Calispell Peak,A,Y,0
+174,Camano,A,Y,0
+175,Camas,A,N,0
+176,Camas Patch,A,Y,0
+177,Camas Prairie,A,Y,0
+178,Camden,A,N,0
+179,Camp Seven,P,Y,1
+180,Canoe Ridge,P,Y,1
+181,Canyon Lake,A,Y,0
+182,Cape Disappointment,A,N,0
+183,Cape Flattery,A,Y,0
+184,Cape Horn SE,P,Y,1
+185,Capitol Peak,A,N,0
+186,Captain John Rapids,P,N,1
+187,Captain Point,A,N,0
+188,Carlisle,A,N,0
+189,Carlsborg,A,Y,0
+190,Carnation,A,N,0
+191,Carson,A,N,0
+192,Cascade Pass,A,Y,0
+193,Cashmere,P,N,1
+194,Cashmere Mountain,P,N,1
+195,Castile Falls,A,Y,0
+196,Castle Peak,A,Y,0
+197,Castle Rock,A,N,0
+198,Cathlamet,A,N,0
+199,Cavanaugh Creek,A,Y,0
+200,Cayuse Mountain,P,Y,1
+201,Cedar Flats,A,N,0
+202,Cedarville,A,N,0
+203,Cedonia,A,Y,0
+204,Center,A,N,0
+205,Centerville,A,Y,0
+206,Central Ferry,P,Y,1
+207,Central Park,A,N,0
+208,Central Peak,A,N,0
+209,Centralia,A,N,0
+210,Chapman Lake,A,Y,0
+211,Chattaroy,A,Y,0
+212,Chelan,P,N,1
+213,Chelan Falls,P,Y,1
+214,Cheney,A,Y,0
+215,Chesaw,A,Y,0
+216,Chester Morse Lake,A,N,0
+217,Chewelah,A,Y,0
+218,Chief Joseph Dam,P,Y,1
+219,Chikamin Creek,P,N,1
+220,Chikamin Peak,A,Y,0
+221,Chiliwist Valley,P,Y,1
+222,Chimney Peak,A,N,0
+223,China Bend,A,Y,0
+224,Chinook,A,N,0
+225,Chinook Pass,A,Y,0
+226,Chiwaukum Mountains,A,N,0
+227,Christmas Creek,A,N,0
+228,Chumstick Mountain,P,N,1
+229,Churchill Mountain,A,Y,0
+230,Clallam Bay,A,Y,0
+231,Clark Mountain,A,N,0
+232,Clarkston,P,Y,1
+233,Clayton,A,Y,0
+234,Cle Elum,A,Y,0
+235,Cle Elum Lake,A,Y,0
+236,Clear West Peak,A,Y,0
+237,Cliff Ridge,A,Y,0
+238,Cliffdell,A,Y,0
+239,Clyde,P,Y,1
+240,Coal Creek,A,N,0
+241,Cody Butte,A,N,0
+242,Cody Lake,A,N,0
+243,Coffeepot Lake,P,Y,1
+244,Coleman Hill,P,Y,1
+245,Coleman Peak,P,Y,1
+246,Colfax North,A,Y,0
+247,Colfax South,A,Y,0
+248,College Place,P,Y,1
+249,Colockum Pass,P,Y,1
+250,Colockum Pass SE,P,Y,1
+251,Colockum Pass SW,P,Y,1
+252,Colonel Bob,A,N,0
+253,Colton,P,Y,1
+254,Columbia Point,P,Y,1
+255,Colville,A,Y,0
+256,Conconully East,P,Y,1
+257,Conconully West,P,Y,1
+258,Connell,P,Y,1
+259,Connell SE,P,Y,1
+260,Conway,A,Y,0
+261,Cooke Mountain,A,N,0
+262,Cooper Mountain,P,Y,1
+263,Cooper Ridge,P,N,1
+264,Copalis Beach,A,N,0
+265,Copalis Crossing,A,N,0
+266,Coppei,P,Y,1
+267,Copper Butte,A,N,0
+268,Copper Mountain,A,Y,0
+269,Corfu,P,Y,1
+270,Cormana Lake,A,Y,0
+271,Corral Butte,P,Y,1
+272,Corral Canyon,P,Y,1
+273,Cougar,A,N,0
+274,Cougar Lake,A,Y,0
+275,Cougar Mountain,A,N,0
+276,Coulee City,P,Y,1
+277,Coupeville,A,Y,0
+278,Cowlitz Falls,A,N,0
+279,Coxit Mountain,P,Y,1
+280,Coyote Butte,P,Y,1
+281,Coyote Mountain,A,N,0
+282,Coyote Rapids,P,Y,1
+283,Crater Mountain,A,Y,0
+284,Crawfish Lake,P,Y,1
+285,Crescent Harbor,A,Y,0
+286,Creston,A,Y,0
+287,Creston Butte,A,Y,0
+288,Crider Valley,A,Y,0
+289,Crow Butte,P,N,1
+290,Cumberland,A,N,0
+291,Curlew,A,N,0
+292,Curtis,A,N,0
+293,Cusick,A,N,0
+294,Cyclone Creek,A,N,0
+295,Cypress Island,A,Y,0
+296,Damnation Peak,A,Y,0
+297,Darland Mountain,A,Y,0
+298,Darrington,A,Y,0
+299,Dartford,A,Y,0
+300,Davenport,A,Y,0
+301,Davis Peak,A,Y,0
+302,Day Lake,A,Y,0
+303,Dayton,P,Y,1
+304,Dead Canyon,A,Y,0
+305,Deadman Peak,P,Y,1
+306,Deadmans Hill,A,Y,0
+307,Dean Creek,A,N,0
+308,Deception Pass,A,Y,0
+309,Deep Creek,A,Y,0
+310,Deep Lake,A,Y,0
+311,Deer Island,A,N,0
+312,Deer Lake,A,Y,0
+313,Deer Park,A,Y,0
+314,Delaney,P,Y,1
+315,Deming,A,Y,0
+316,Des Moines,A,N,0
+317,Destruction Island,A,N,0
+318,Devils Slide,A,N,0
+319,Diablo Dam,A,Y,0
+320,Diamond,A,Y,0
+321,Diamond Lake,A,N,0
+322,Diamond Peak,P,Y,1
+323,Dickey Lake,A,Y,0
+324,Disautel,P,Y,1
+325,Disque,A,Y,0
+326,Dixie,P,Y,1
+327,Dodge,P,Y,1
+328,Doe Mountain,P,Y,1
+329,Dole,A,Y,0
+330,Dome Peak,A,Y,0
+331,Doris,P,Y,1
+332,Dot,A,Y,0
+333,Doty,A,N,0
+334,Douglas,P,Y,1
+335,Douty Canyon,A,Y,0
+336,Downey Mountain,A,Y,0
+337,Draper Lake,P,Y,1
+338,Dry Bed Lakes,A,N,0
+339,Duncan Ridge,P,Y,1
+340,Dungeness,A,N,0
+341,Dunn Mountain,A,Y,0
+342,Dusty,A,Y,0
+343,Eagle Gorge,A,N,0
+344,Eagle Lakes,P,Y,1
+345,East Canyon Ridge,A,N,0
+346,East Kittitas,P,Y,1
+347,East of Raymond,A,N,0
+348,East Olympia,A,N,0
+349,Easton,A,Y,0
+350,Eatonville,A,Y,0
+351,Echo Valley,A,Y,0
+352,Eckler Mountain,P,Y,1
+353,Edds Mountain,A,N,0
+354,Eden,P,N,1
+355,Eden Valley,A,N,0
+356,Edmonds East,A,N,0
+357,Edmonds West,A,N,0
+358,Edwall,A,Y,0
+359,Elbe,A,Y,0
+360,Elberton,A,Y,0
+361,Eldon,A,N,0
+362,Eldorado Peak,A,Y,0
+363,Electric City,P,Y,1
+364,Elephant Mountain,A,Y,0
+365,Eliza Island,A,Y,0
+366,Elk,A,N,0
+367,Elk Mountain,A,N,0
+368,Elk Rock,A,N,0
+369,Elkhorn Creek,A,N,0
+370,Ellensburg North,P,Y,1
+371,Ellensburg South,P,Y,1
+372,Ellis Mountain,A,Y,0
+373,Ellisforde,P,Y,1
+374,Elma,A,N,0
+375,Elochoman Lake,A,N,0
+376,Elochoman Pass,A,N,0
+377,Eltopia,P,Y,1
+378,Elwha,A,Y,0
+379,Elwood,P,Y,1
+380,Emerson Nipple,P,Y,1
+381,Empey Mountain,A,Y,0
+382,Enchantment Lakes,P,N,1
+383,Endicott,A,Y,0
+384,Enterprise,P,Y,1
+385,Entiat,P,Y,1
+386,Enumclaw,A,N,0
+387,Ephrata,P,Y,1
+388,Ephrata SW,P,Y,1
+389,Eureka,P,Y,1
+390,Everett,A,N,0
+391,Evergreen Mountain,A,N,0
+392,Evergreen Ridge,P,Y,1
+393,Ewan,A,Y,0
+394,Ewartsville,A,Y,0
+395,Fairfield,A,Y,0
+396,Fairview Ridge,A,Y,0
+397,Fall City,A,N,0
+398,Falling Springs,P,Y,1
+399,False Bay,A,Y,0
+400,Fan Lake,A,Y,0
+401,Farmer,P,Y,1
+402,Farmington,A,Y,0
+403,Ferndale,A,Y,0
+404,Fields Spring,P,Y,1
+405,Findley Lake,A,N,0
+406,Finley Creek,A,N,0
+407,Finney Peak,A,Y,0
+408,Fishtrap Lake,A,Y,0
+409,Flora,P,N,1
+410,Foothills,A,Y,0
+411,Forbidden Peak,A,Y,0
+412,Ford,A,Y,0
+413,Forest Center,A,Y,0
+414,Forks,A,Y,0
+415,Fort Lewis,A,Y,0
+416,Fort Simcoe,A,Y,0
+417,Fort Spokane,A,Y,0
+418,Fortson,A,Y,0
+419,Foster Coulee,P,Y,1
+420,Foundation Ridge,A,Y,0
+421,Four Lakes,A,Y,0
+422,Four Mound Prairie,A,Y,0
+423,Fox Island,A,Y,0
+424,Frederickson,A,Y,0
+425,Freeland,A,Y,0
+426,Freeman,A,Y,0
+427,French Butte,A,N,0
+428,Frenchman Hills Lake,P,Y,1
+429,Friday Harbor,A,Y,0
+430,Friedlander Meadows,A,N,0
+431,Frischknecht,P,Y,1
+432,Frost Mountain,A,Y,0
+433,Frosty Creek,A,Y,0
+434,Frosty Meadow,A,N,0
+435,Gable Butte,P,Y,1
+436,Galena Point,A,N,0
+437,Gamma Peak,A,N,0
+438,Gardiner,A,N,0
+439,Garfield,A,Y,0
+440,Gee Point,A,Y,0
+441,George,P,Y,1
+442,Georges Peak,A,N,0
+443,Gifford Peak,A,N,0
+444,Gig Harbor,A,Y,0
+445,Gilbert,A,Y,0
+446,Gillette Mountain,A,Y,0
+447,Ginkgo,P,Y,1
+448,Glaciate Butte,A,N,0
+449,Glacier,A,Y,0
+450,Glacier Peak East,A,N,0
+451,Glacier Peak West,A,N,0
+452,Glade,P,Y,1
+453,Gleason Mountain,A,N,0
+454,Glenoma,A,N,0
+455,Glenwood,A,Y,0
+456,Gloyd,P,Y,1
+457,Goat Mountain,A,N,0
+458,Goddards Peak,A,Y,0
+459,Godman Spring,P,Y,1
+460,Gold Bar,A,N,0
+461,Gold Mountain,A,N,0
+462,Golden Lakes,A,Y,0
+463,Goldendale,A,Y,0
+464,Golgotha Butte,A,N,0
+465,Goode Mountain,A,N,0
+466,Goodnoe Hills,A,Y,0
+467,Goose Prairie,A,Y,0
+468,Gould City,P,Y,1
+469,Govan,P,Y,1
+470,Grand Coulee Dam,P,Y,1
+471,Grandview,A,Y,0
+472,Grandy Lake,A,Y,0
+473,Granger,A,Y,0
+474,Granger NE,A,Y,0
+475,Granger NW,A,Y,0
+476,Granite Falls,A,N,0
+477,Granite Point,P,Y,1
+478,Grant Orchards,P,Y,1
+479,Grayback Mountain,A,Y,0
+480,Grayland,A,N,0
+481,Grays River,A,N,0
+482,Green Mountain,A,N,0
+483,Greenacres,A,Y,0
+484,Greenhorn Buttes,A,N,0
+485,Greenwater,A,N,0
+486,Grisdale,A,N,0
+487,Groat Mountain,A,Y,0
+488,Grotto,A,N,0
+489,Guler Mountain,A,Y,0
+490,Gumboot Mountain,A,N,0
+491,Gunderson Mountain,A,Y,0
+492,Gypsy Peak,A,N,0
+493,Hadley,P,Y,1
+494,Hagerty Butte,A,Y,0
+495,Hamilton,A,Y,0
+496,Hamilton Buttes,A,N,0
+497,Hanford,P,Y,1
+498,Hanford NE,P,Y,1
+499,Hansville,A,N,0
+500,Harlow Ridge,P,Y,1
+501,Harrah,A,Y,0
+502,Harrah SE,A,Y,0
+503,Harrington,A,Y,0
+504,Harrington SE,A,Y,0
+505,Harsha,P,Y,1
+506,Hartline,P,Y,1
+507,Hartline NW,P,Y,1
+508,Hartline SE,P,Y,1
+509,Hartline SW,P,Y,1
+510,Harts Lake,A,Y,0
+511,Hat Rock,P,N,1
+512,Hatchet Mountain,A,N,0
+513,Hatton,P,Y,1
+514,Hatton NW,P,Y,1
+515,Havillah,P,Y,1
+516,Hay,P,Y,1
+517,Haystack Mountain,A,Y,0
+518,Helena Ridge,A,N,0
+519,Helmer Mountain,A,Y,0
+520,Hembre Mountain,A,Y,0
+521,Hemlock Pass,A,N,0
+522,Heppner Junction,A,N,0
+523,Hobart,A,N,0
+524,Hoffstadt Mountain,A,N,0
+525,Hoh Head,A,N,0
+526,Hoko Falls,A,Y,0
+527,Holden,A,N,0
+528,Holly,A,N,0
+529,Honn Lakes,A,Y,0
+530,Hood River,A,N,0
+531,Hoodoo Peak,P,Y,1
+532,Hoodsport,A,N,0
+533,Hooper,P,Y,1
+534,Hooper Lake,P,Y,1
+535,Hopkins Canyon,P,Y,1
+536,Hopkins Ridge,P,Y,1
+537,Hoquiam,A,N,0
+538,Horn Rapids Dam,P,Y,1
+539,Horseshoe Basin,P,Y,1
+540,Hozomeen Mountain,A,Y,0
+541,Huckleberry Mountain,A,Y,0
+542,Hudson Creek,A,Y,0
+543,Humorist,P,Y,1
+544,Humptulips,A,N,0
+545,Hunger Mountain,A,Y,0
+546,Hungry Mountain,P,Y,1
+547,Hunters,A,Y,0
+548,Huntsville,P,Y,1
+549,Hurley Peak,P,Y,1
+550,Hurricane Hill,A,Y,0
+551,Husum,A,Y,0
+552,Illabot Peaks,A,Y,0
+553,Inchelium,A,N,0
+554,Independent Mountain,A,N,0
+555,Index,A,N,0
+556,Indian Pass,A,Y,0
+557,Indian Rock,A,Y,0
+558,Inkster Lake,A,Y,0
+559,Ione,A,N,0
+560,Iowa Flats,P,Y,1
+561,Irby,P,Y,1
+562,Irrigon,P,N,1
+563,Jack Mountain,A,Y,0
+564,Jack Ridge,A,N,0
+565,Jack Woods Butte,P,Y,1
+566,Jackknife Mountain,A,N,0
+567,Jackson Prairie,A,N,0
+568,Jameson Lake East,P,Y,1
+569,Jameson Lake SE,P,Y,1
+570,Jameson Lake SW,P,Y,1
+571,Jameson Lake West,P,Y,1
+572,Jared,A,N,0
+573,Jennies Butte,A,Y,0
+574,Jim Creek Butte,P,N,1
+575,Joe Lake,P,Y,1
+576,Johnny George Mountain,A,N,0
+577,Johnson Butte,P,Y,1
+578,Joyce,A,Y,0
+579,Jungle Butte,A,Y,0
+580,Juniper,P,N,1
+581,Juniper Beach,A,Y,0
+582,Juniper Canyon,P,N,1
+583,Kachess Lake,A,Y,0
+584,Kahlotus,P,Y,1
+585,Kalaloch Ridge,A,N,0
+586,Kalama,A,N,0
+587,Kamilche Valley,A,Y,0
+588,Karakul Hills,A,Y,0
+589,Karamin,A,N,0
+590,Keller,A,N,0
+591,Keller Butte,P,N,1
+592,Keller Ferry,A,N,0
+593,Kellogg Creek,P,Y,1
+594,Kelso,A,N,0
+595,Kendall,A,Y,0
+596,Kennewick,P,Y,1
+597,Kentry Ridge,A,Y,0
+598,Kettle Falls,A,Y,0
+599,Kewa,A,N,0
+600,Keystone,P,Y,1
+601,Kimta Peak,A,N,0
+602,King Mountain,A,N,0
+603,Kiona Peak,A,N,0
+604,Kirby,P,Y,1
+605,Kittitas,P,Y,1
+606,Klickitat,A,Y,0
+607,Kloochman Rock,A,N,0
+608,Knappton,A,N,0
+609,Knowlton Knob,P,N,1
+610,Kooskooskie,P,Y,1
+611,Kusshi Creek,A,Y,0
+612,La Conner,A,Y,0
+613,La Crosse East,A,Y,0
+614,La Crosse West,A,Y,0
+615,La Fleur Lake,A,N,0
+616,La Push,A,Y,0
+617,Labyrinth Mountain,A,N,0
+618,Lacamas Creek,A,Y,0
+619,Lacey,A,N,0
+620,Lake Chaplain,A,N,0
+621,Lake Crescent,A,Y,0
+622,Lake Gillette,A,Y,0
+623,Lake Joy,A,N,0
+624,Lake Kapowsin,A,Y,0
+625,Lake Lawrence,A,N,0
+626,Lake Philippa,A,N,0
+627,Lake Pleasant,A,Y,0
+628,Lake Quinault East,A,N,0
+629,Lake Quinault West,A,N,0
+630,Lake Roesiger,A,N,0
+631,Lake Shannon,A,Y,0
+632,Lake Stevens,A,N,0
+633,Lake Sutherland,A,Y,0
+634,Lake Wenatchee,A,N,0
+635,Lake Whatcom,A,Y,0
+636,Lake Wooten,A,N,0
+637,Lakeview Peak,A,N,0
+638,Lamoine,P,Y,1
+639,Lamona,P,Y,1
+640,Lamont,A,Y,0
+641,Lamont NE,A,Y,0
+642,Lance Hills,A,Y,0
+643,Langley,A,Y,0
+644,Larch Mountain,A,Y,0
+645,Larsen Creek,A,N,0
+646,Latah,A,Y,0
+647,Laurier,A,Y,0
+648,Lawrence,A,Y,0
+649,Le Dout Creek,A,Y,0
+650,Leadpoint,A,Y,0
+651,Leahy,P,Y,1
+652,Leavenworth,P,N,1
+653,Lebam,A,N,0
+654,Lenzie Ranch,P,Y,1
+655,Lester,A,N,0
+656,Levey,P,Y,1
+657,Levey NE,P,Y,1
+658,Levey SW,P,Y,1
+659,Lewis Butte,P,Y,1
+660,Lewiston Orchards South,P,N,1
+661,Liberty,P,Y,1
+662,Liberty Lake,A,Y,0
+663,Lightning Peak,A,N,0
+664,Lilliwaup,A,N,0
+665,Lime Mountain,A,N,0
+666,Limekiln Rapids,P,N,1
+667,Lincoln,A,Y,0
+668,Lind,P,Y,1
+669,Lind SE,P,Y,1
+670,Lind SW,P,Y,1
+671,Little Falls,A,Y,0
+672,Little Huckleberry Mountain,A,N,0
+673,Little Penawawa Creek,A,Y,0
+674,Little Soap Lake,P,Y,1
+675,Littlerock,A,N,0
+676,Locke Island,P,Y,1
+677,Lofall,A,N,0
+678,Logan Hill,A,N,0
+679,Logy Creek Falls,A,Y,0
+680,Logy Creek NE,A,Y,0
+681,Logy Creek SW,A,Y,0
+682,Lone Butte,A,N,0
+683,Lone Pine Butte,A,Y,0
+684,Long Island,A,N,0
+685,Long Lake,A,Y,0
+686,Longbranch,A,Y,0
+687,Lookout Mountain,A,N,0
+688,Loomis,P,Y,1
+689,Lords Valley,A,Y,0
+690,Lost Horse Plateau,A,Y,0
+691,Lost Lake,A,N,0
+692,Lost Peak,A,Y,0
+693,Louie Creek,A,N,0
+694,Loup Loup Summit,P,Y,1
+695,Lowden,P,Y,1
+696,Lower Monumental Dam,P,Y,1
+697,Lucerne,A,N,0
+698,Lummi Bay,A,Y,0
+699,Luna Butte,A,Y,0
+700,Luna Gulch,A,Y,0
+701,Lyle,A,N,0
+702,Lyman,A,Y,0
+703,Lynden,A,Y,0
+704,Mabton East,A,Y,0
+705,Mabton West,A,Y,0
+706,Macafee Hill,A,N,0
+707,Macall,A,Y,0
+708,Mae,P,Y,1
+709,Maiden Peak,A,Y,0
+710,Maiden Spring,P,Y,1
+711,Makah Bay,A,Y,0
+712,Malaga,P,N,1
+713,Malaga NE,P,Y,1
+714,Malden,A,Y,0
+715,Mallardy Ridge,A,N,0
+716,Malo,A,N,0
+717,Malone,A,N,0
+718,Malott,P,Y,1
+719,Maltby,A,N,0
+720,Manastash Creek,A,Y,0
+721,Manastash Lake,A,Y,0
+722,Mansfield,P,Y,1
+723,Manson,P,N,1
+724,Maple Falls,A,Y,0
+725,Maple Valley,A,N,0
+726,Marblemount,A,Y,0
+727,Marcus,A,Y,0
+728,Marengo,P,Y,1
+729,Marlin,P,Y,1
+730,Marlin SW,P,Y,1
+731,Martin Peak,P,Y,1
+732,Marysville,A,N,0
+733,Mason Lake,A,N,0
+734,Matheny Ridge,A,N,0
+735,Mathews Corner,P,Y,1
+736,Matlock,A,N,0
+737,Maxwelton,A,Y,0
+738,Mayfield Lake,A,N,0
+739,Maytown,A,N,0
+740,Mazama,A,Y,0
+741,McAlester Mountain,A,N,0
+742,McCartney Peak,A,Y,0
+743,McCleary,A,N,0
+744,McCoy Lake,A,Y,0
+745,McCoy Peak,A,N,0
+746,McDonald Spring,P,Y,1
+747,McGregor Mountain,A,N,0
+748,McKays Butte,A,Y,0
+749,McKenna,A,N,0
+750,McLeod Mountain,A,Y,0
+751,McMurray,A,Y,0
+752,McNeil Island,A,Y,0
+753,Mead,A,Y,0
+754,Meadow Mountain,A,N,0
+755,Medical Lake,A,Y,0
+756,Medicine Valley,A,Y,0
+757,Meeks Table,A,Y,0
+758,Menlo,A,N,0
+759,Mesa East,P,Y,1
+760,Mesa West,P,Y,1
+761,Metaline,A,Y,0
+762,Metaline Falls,A,Y,0
+763,Methow,P,Y,1
+764,Mica Mountain,P,Y,1
+765,Mica Peak,A,Y,0
+766,Midnight Mountain,A,Y,0
+767,Milk Canyon,A,Y,0
+768,Miller Mountain,A,N,0
+769,Mineral,A,N,0
+770,Mission Peak,P,N,1
+771,Moclips,A,N,0
+772,Mold,P,Y,1
+773,Molson,A,Y,0
+774,Mondovi,A,Y,0
+775,Monitor,P,N,1
+776,Monroe,A,N,0
+777,Monse,P,Y,1
+778,Monte Cristo,A,N,0
+779,Montesano,A,N,0
+780,Monument Hill,P,Y,1
+781,Monumental Mountain,A,N,0
+782,Monumental Rock,P,Y,1
+783,Moon Mountain,A,N,0
+784,Morse Creek,A,Y,0
+785,Morton,A,N,0
+786,Moscow West,P,N,1
+787,Moses Lake North,P,Y,1
+788,Moses Lake NW,P,Y,1
+789,Moses Lake South,P,Y,1
+790,Moses Meadows,P,Y,1
+791,Moses Mountain,P,Y,1
+792,Mossyrock,A,N,0
+793,Mount Adams East,A,N,0
+794,Mount Adams West,A,N,0
+795,Mount Angeles,A,Y,0
+796,Mount Annie,A,Y,0
+797,Mount Arriva,A,Y,0
+798,Mount Baker,A,Y,0
+799,Mount Barney,P,Y,1
+800,Mount Blum,A,Y,0
+801,Mount Bonaparte,A,Y,0
+802,Mount Brynion,A,N,0
+803,Mount Carrie,A,Y,0
+804,Mount Challenger,A,Y,0
+805,Mount Christie,A,N,0
+806,Mount Clifty,A,Y,0
+807,Mount Daniel,A,N,0
+808,Mount David,A,N,0
+809,Mount Deception,A,N,0
+810,Mount Defiance,A,N,0
+811,Mount Higgins,A,Y,0
+812,Mount Hoquiam,A,N,0
+813,Mount Howard,A,N,0
+814,Mount Hull,P,Y,1
+815,Mount Jupiter,A,N,0
+816,Mount Kit Carson,A,Y,0
+817,Mount Lago,A,Y,0
+818,Mount Larrabee,A,Y,0
+819,Mount Leona,A,N,0
+820,Mount Logan,A,Y,0
+821,Mount Lyall,A,N,0
+822,Mount Mitchell,A,N,0
+823,Mount Muller,A,Y,0
+824,Mount Olson,A,N,0
+825,Mount Olympus,A,N,0
+826,Mount Phelps,A,N,0
+827,Mount Prophet,A,Y,0
+828,Mount Queets,A,N,0
+829,Mount Rainier East,A,N,0
+830,Mount Rainier West,A,Y,0
+831,Mount Redoubt,A,Y,0
+832,Mount Saint Helens,A,N,0
+833,Mount Sefrit,A,Y,0
+834,Mount Shuksan,A,Y,0
+835,Mount Si,A,N,0
+836,Mount Skokomish,A,N,0
+837,Mount Spickard,A,Y,0
+838,Mount Spokane,A,Y,0
+839,Mount Steel,A,N,0
+840,Mount Stickney,A,N,0
+841,Mount Stuart,P,Y,1
+842,Mount Tabor,A,N,0
+843,Mount Tebo,A,N,0
+844,Mount Tom,A,N,0
+845,Mount Townsend,A,N,0
+846,Mount Triumph,A,Y,0
+847,Mount Vernon,A,Y,0
+848,Mount Walker,A,N,0
+849,Mount Washington,A,N,0
+850,Mount Wow,A,Y,0
+851,Mount Zion,A,Y,0
+852,Mountain View,P,Y,1
+853,Mowich Lake,A,Y,0
+854,Mud Spring,P,Y,1
+855,Mukilteo,A,N,0
+856,Multnomah Falls,A,N,0
+857,Naches,A,Y,0
+858,Nagrom,A,N,0
+859,Nahwatzel Lake,A,N,0
+860,Naneum Canyon,P,Y,1
+861,Napavine,A,N,0
+862,Nassa Point,A,N,0
+863,Neah Bay,A,Y,0
+864,Nelson Peak,A,Y,0
+865,Nemah,A,N,0
+866,Nespelem,A,Y,0
+867,Nespelem NE,A,N,0
+868,New London,A,N,0
+869,Newaukum Lake,A,N,0
+870,Newman Lake,A,Y,0
+871,Newport,A,N,0
+872,Nighthawk,P,Y,1
+873,Nile,A,Y,0
+874,Nine Canyon,P,Y,1
+875,Nine Mile Falls,A,Y,0
+876,Ninemile Flat,A,N,0
+877,Nisqually,A,Y,0
+878,Noble Knob,A,Y,0
+879,Nordland,A,N,0
+880,Norse Peak,A,Y,0
+881,North Baldy,A,N,0
+882,North Bend,A,N,0
+883,North Cove,A,N,0
+884,North Nemah,A,N,0
+885,Northport,A,Y,0
+886,Northwestern Lake,A,Y,0
+887,O'Sullivan Dam,P,Y,1
+888,O'Took Prairie,A,N,0
+889,Oak Harbor,A,Y,0
+890,Oak Point,A,N,0
+891,Oakesdale,A,Y,0
+892,Oakville,A,N,0
+893,Ocean Park,A,N,0
+894,Odessa,P,Y,1
+895,Ohanapecosh Hot Springs,A,N,0
+896,Okanogan,P,Y,1
+897,Olalla,A,N,0
+898,Old Baldy,P,Y,1
+899,Old Baldy Mountain,A,Y,0
+900,Old Scab Mountain,A,Y,0
+901,Old Snowy Mountain,A,N,0
+902,Olsen Canyon,A,Y,0
+903,Omak,P,Y,1
+904,Omak Lake,P,Y,1
+905,Omak Mountain,P,Y,1
+906,Oman Ranch,A,N,0
+907,Omans,A,Y,0
+908,Onalaska,A,N,0
+909,Onalaska NW,A,N,0
+910,Onion Creek,A,Y,0
+911,Orchards,A,Y,0
+912,Oregon Butte,P,Y,1
+913,Orient,A,N,0
+914,Orondo,P,Y,1
+915,Oroville,P,Y,1
+916,Orting,A,Y,0
+917,Orwig Hump,A,N,0
+918,Oso,A,Y,0
+919,Oss Peak,P,N,1
+920,Othello,P,Y,1
+921,Outlet Falls,A,Y,0
+922,Oval Peak,A,Y,0
+923,Owl Mountain,A,N,0
+924,Oysterville,A,N,0
+925,Ozette,A,Y,0
+926,Pacific Lake,P,Y,1
+927,Packwood,A,N,0
+928,Packwood Lake,A,N,0
+929,Page,P,Y,1
+930,Palisades,P,Y,1
+931,Palm Lake,A,Y,0
+932,Palouse,A,Y,0
+933,Palouse Falls,P,Y,1
+934,Panjab Creek,P,Y,1
+935,Paradise,P,N,1
+936,Park Lake,P,Y,1
+937,Park Rapids,A,Y,0
+938,Pasayten Peak,A,Y,0
+939,Pasco,P,Y,1
+940,Pass Creek,A,Y,0
+941,Pateros,P,Y,1
+942,Paterson,P,Y,1
+943,Pe Ell,A,N,0
+944,Pearrygin Peak,P,Y,1
+945,Peola,P,Y,1
+946,Peshastin,P,N,1
+947,Petersburg,A,N,0
+948,Phinny Hill,A,Y,0
+949,Piersol Hills,P,Y,1
+950,Pine City,A,Y,0
+951,Pine Mountain,A,Y,0
+952,Pinegrass Ridge,A,Y,0
+953,Ping,P,Y,1
+954,Pinkham Butte,P,Y,1
+955,Pinnacle Mountain,A,N,0
+956,Piscoe Meadow,A,Y,0
+957,Pizarro,P,Y,1
+958,Plain,P,N,1
+959,Plaza,A,Y,0
+960,Pleasant View,P,Y,1
+961,Pluvius,A,N,0
+962,Poe Mountain,A,N,0
+963,Point Brown,A,N,0
+964,Poisel Butte,A,Y,0
+965,Poisel Butte NW,A,Y,0
+966,Poisel Butte SE,A,Y,0
+967,Poisel Butte SW,A,Y,0
+968,Polallie Ridge,A,Y,0
+969,Poland Butte,A,Y,0
+970,Pomeroy,P,Y,1
+971,Pomona,A,Y,0
+972,Port Angeles,A,Y,0
+973,Port Gamble,A,N,0
+974,Port Ludlow,A,N,0
+975,Port Townsend North,A,N,0
+976,Port Townsend South,A,N,0
+977,Portland,A,N,0
+978,Potter Hill,P,Y,1
+979,Poulsbo,A,N,0
+980,Poverty Bay,A,N,0
+981,Prairie Mountain,A,Y,0
+982,Prescott,P,Y,1
+983,Prices Peak,A,N,0
+984,Priest Rapids,P,Y,1
+985,Priest Rapids NE,P,Y,1
+986,Prince Creek,A,N,0
+987,Prior Ranch,P,Y,1
+988,Prosser,P,Y,1
+989,Prosser SE,P,Y,1
+990,Prosser SW,A,Y,0
+991,Providence,P,Y,1
+992,Pugh Mountain,A,N,0
+993,Pullman,A,Y,0
+994,Pumpkin Mountain,A,Y,0
+995,Purcell Mountain,A,N,0
+996,Puyallup,A,Y,0
+997,Pyramid Mountain,P,N,1
+998,Pysht,A,Y,0
+999,Quartz Creek Butte,A,N,0
+1000,Quartz Mountain,A,Y,0
+1001,Queets,A,N,0
+1002,Quigley Butte,A,Y,0
+1003,Quilcene,A,N,0
+1004,Quillayute Prairie,A,Y,0
+1005,Quincy,P,Y,1
+1006,Quinton,A,N,0
+1007,Railroad Camp,A,N,0
+1008,Rainbow Falls,A,N,0
+1009,Rainier,A,N,0
+1010,Ralston,P,Y,1
+1011,Randle,A,N,0
+1012,Rat Lake,P,Y,1
+1013,Rattlesnake Canyon,P,Y,1
+1014,Rattlesnake Springs,P,Y,1
+1015,Raven Roost,A,N,0
+1016,Raymond,A,N,0
+1017,Reade Hill,A,Y,0
+1018,Reardan East,A,Y,0
+1019,Reardan West,A,Y,0
+1020,Red Top Mountain,P,Y,1
+1021,Reecer Canyon,P,Y,1
+1022,Reiman,P,Y,1
+1023,Reiman SE,P,Y,1
+1024,Reiman SW,P,Y,1
+1025,Remmel Mountain,P,Y,1
+1026,Rendevous Mountain,P,Y,1
+1027,Renton,A,N,0
+1028,Republic,A,N,0
+1029,Revere,A,Y,0
+1030,Rice,A,Y,0
+1031,Richardson,A,Y,0
+1032,Richland,P,Y,1
+1033,Ridgefield,A,Y,0
+1034,Riley Lake,A,N,0
+1035,Rimrock Lake,A,Y,0
+1036,Ring,P,N,1
+1037,Ritzville NE,P,Y,1
+1038,Ritzville NW,P,Y,1
+1039,Ritzville SE,P,Y,1
+1040,Ritzville SW,P,Y,1
+1041,Riverland,P,Y,1
+1042,Riverside,P,Y,1
+1043,Robinette Mountain,P,Y,1
+1044,Robinson Mountain,A,Y,0
+1045,Roche Harbor,A,Y,0
+1046,Rochester,A,N,0
+1047,Rock Island,P,Y,1
+1048,Rock Island Dam,P,Y,1
+1049,Rock Lake,A,Y,0
+1050,Rocklyn,A,Y,0
+1051,Rocklyn SE,A,Y,0
+1052,Rocklyn SW,A,Y,0
+1053,Rockpile Creek,P,Y,1
+1054,Rockport,A,Y,0
+1055,Rocky Reach Dam,P,N,1
+1056,Ronald,A,Y,0
+1057,Rosalia,A,Y,0
+1058,Rosburg,A,N,0
+1059,Rose Springs,P,Y,1
+1060,Ross Dam,A,Y,0
+1061,Roxboro,P,Y,1
+1062,Royal Camp,P,Y,1
+1063,Royal City,P,Y,1
+1064,Ruby,A,N,0
+1065,Ruby Hill,P,Y,1
+1066,Ruff,P,Y,1
+1067,Rufus,A,N,0
+1068,Rulo,P,Y,1
+1069,Rye Grass Coulee,P,Y,1
+1070,Sacheen Lake,A,N,0
+1071,Saddle Butte,P,Y,1
+1072,Sagebrush Flat,P,Y,1
+1073,Sagebrush Ridge,A,Y,0
+1074,Saint Andrews,P,Y,1
+1075,Saint Helens,A,N,0
+1076,Saint John,A,N,0
+1077,Salmo Mountain,A,N,0
+1078,Salmon River East,A,N,0
+1079,Salmon River West,A,N,0
+1080,Sanderson Creek,P,Y,1
+1081,Saska Peak,A,N,0
+1082,Sassin,A,Y,0
+1083,Satus Pass,A,Y,0
+1084,Sauk Mountain,A,Y,0
+1085,Sauvie Island,A,N,0
+1086,Savage Island,P,Y,1
+1087,Sawtooth Ridge,A,N,0
+1088,Scenic,A,N,0
+1089,Schaefer Lake,P,N,1
+1090,Schoonover,P,Y,1
+1091,Schrag,P,Y,1
+1092,Scooteney Reservoir,P,Y,1
+1093,Scotchman Lake,A,N,0
+1094,Seabeck,A,N,0
+1095,Sedro-Woolley North,A,Y,0
+1096,Sedro-Woolley South,A,Y,0
+1097,Sekiu River,A,Y,0
+1098,Selah,A,Y,0
+1099,Selah Springs,A,Y,0
+1100,Sequim,A,Y,0
+1101,Setters,A,N,0
+1102,Seventeenmile Mountain,A,N,0
+1103,Shale Slough,A,N,0
+1104,Shano,P,Y,1
+1105,Shaw Island,A,Y,0
+1106,Shelton,A,N,0
+1107,Shelton Valley,A,N,0
+1108,Sherman Peak,A,N,0
+1109,Shuksan Arm,A,Y,0
+1110,Shull Mountain,A,Y,0
+1111,Sieler,P,Y,1
+1112,Signal Peak,A,Y,0
+1113,Silcott Island,P,Y,1
+1114,Silver Falls,P,N,1
+1115,Silver Lake,A,N,0
+1116,Silver Star Mountain,A,Y,0
+1117,Silverton,A,N,0
+1118,Sims Corner,P,Y,1
+1119,Siouxon Peak,A,N,0
+1120,Sitdown Mountain,A,N,0
+1121,Skagit Peak,A,Y,0
+1122,Skamokawa,A,N,0
+1123,Skamokawa Pass,A,N,0
+1124,Skokomish Valley,A,N,0
+1125,Skookum Creek,A,N,0
+1126,Skykomish,A,N,0
+1127,Slate Peak,A,Y,0
+1128,Slater,P,Y,1
+1129,Sleeping Beauty,A,N,0
+1130,Slide Peak,A,Y,0
+1131,Sloan Peak,A,N,0
+1132,Smeltz,P,N,1
+1133,Smith Creek Butte,A,N,0
+1134,Smyrna,P,Y,1
+1135,Snake River,P,Y,1
+1136,Snider Peak,A,Y,0
+1137,Snipes Creek,P,Y,1
+1138,Snively Basin,P,Y,1
+1139,Snohomish,A,N,0
+1140,Snoqualmie,A,N,0
+1141,Snoqualmie Lake,A,N,0
+1142,Snoqualmie Pass,A,N,0
+1143,Snowking Mountain,A,Y,0
+1144,Soap Lake,P,Y,1
+1145,Soda Lake,P,Y,1
+1146,Sonny Boy Lakes,A,Y,0
+1147,South Bend,A,N,0
+1148,South Elma,A,N,0
+1149,South Huckleberry Mountain,A,N,0
+1150,South Navarre Peak,P,N,1
+1151,Spanaway,A,Y,0
+1152,Spangle East,A,Y,0
+1153,Spangle West,A,Y,0
+1154,Spencer Butte,A,N,0
+1155,Sperry,P,Y,1
+1156,Spiral Butte,A,Y,0
+1157,Spirit,A,Y,0
+1158,Spirit Lake East,A,N,0
+1159,Spirit Lake West,A,N,0
+1160,Spokane NE,A,Y,0
+1161,Spokane NW,A,Y,0
+1162,Spokane SE,A,Y,0
+1163,Spokane SW,A,Y,0
+1164,Sprague,A,Y,0
+1165,Sprague Lake,A,Y,0
+1166,Sprague Lake NE,A,Y,0
+1167,Sprague Lake SW,A,Y,0
+1168,Spring Valley,A,Y,0
+1169,Springdale,A,Y,0
+1170,Spruce Mountain,A,N,0
+1171,Spur Peak,P,Y,1
+1172,Stabler,A,N,0
+1173,Stacker Butte,A,Y,0
+1174,Stagman Butte,A,Y,0
+1175,Stampede Pass,A,Y,0
+1176,Stanwood,A,N,0
+1177,Starbuck East,P,Y,1
+1178,Starbuck West,P,Y,1
+1179,Steamboat Mountain,A,N,0
+1180,Steamboat Rock SE,P,N,1
+1181,Steamboat Rock SW,P,N,1
+1182,Stehekin,A,N,0
+1183,Steilacoom,A,Y,0
+1184,Stember Creek,P,Y,1
+1185,Stensgar Mountain,A,Y,0
+1186,Stentz Spring,P,Y,1
+1187,Stepstone Creek,A,Y,0
+1188,Steptoe,A,Y,0
+1189,Stequaleho Creek,A,N,0
+1190,Stevens Creek,A,N,0
+1191,Stevens Pass,A,N,0
+1192,Stimson Hill,A,Y,0
+1193,Storm King Mountain,A,N,0
+1194,Stormy Mountain,P,N,1
+1195,Stratford,P,Y,1
+1196,Strawberry Mountain,A,Y,0
+1197,Stray Gulch,P,Y,1
+1198,Stubblefield Point,P,Y,1
+1199,Sugarloaf Peak,P,N,1
+1200,Suiattle Pass,A,N,0
+1201,Sullivan Lake,P,Y,1
+1202,Sulphur Lake,P,Y,1
+1203,Sulphur Spring,P,Y,1
+1204,Sultan,A,N,0
+1205,Sumas,A,Y,0
+1206,Summit Lake,A,N,0
+1207,Sumner,A,Y,0
+1208,Sun Mountain,A,N,0
+1209,Sun Top,A,Y,0
+1210,Sundale,A,N,0
+1211,Sundale NW,A,N,0
+1212,Sunnyside,A,Y,0
+1213,Sunrise,A,Y,0
+1214,Suquamish,A,N,0
+1215,Swan Lake,A,N,0
+1216,Swanson Lakes,P,Y,1
+1217,Swauk Prairie,P,Y,1
+1218,Sweetgrass Butte,A,Y,0
+1219,Sweigiler Creek,A,N,0
+1220,Sylvan Lake,P,Y,1
+1221,Synarep,P,Y,1
+1222,Tacoma North,A,Y,0
+1223,Tacoma Peak,A,N,0
+1224,Tacoma South,A,Y,0
+1225,Taholah,A,N,0
+1226,Tampico,A,Y,0
+1227,Taneum Canyon,A,Y,0
+1228,Tanner Butte,A,N,0
+1229,Tanwax Lake,A,Y,0
+1230,Tatoosh Buttes,A,Y,0
+1231,Tatoosh Lakes,A,N,0
+1232,Taunton,P,Y,1
+1233,Taylor Canyon,P,Y,1
+1234,Teanaway,P,Y,1
+1235,Teanaway Butte,A,Y,0
+1236,Teepee Butte,P,N,1
+1237,Tekoa,A,Y,0
+1238,Tekoa Mountain,A,Y,0
+1239,Telford,A,Y,0
+1240,Tenalquot Prairie,A,N,0
+1241,Termination Point,A,N,0
+1242,Texas Lake,A,Y,0
+1243,The Brothers,A,N,0
+1244,The Cottonwoods,A,Y,0
+1245,The Cradle,A,N,0
+1246,The Dalles North,A,N,0
+1247,The Dalles South,A,N,0
+1248,The Pothole,P,Y,1
+1249,The Rockies,A,N,0
+1250,Thera,A,Y,0
+1251,Thimble Mountain,A,N,0
+1252,Thirteenmile Creek,A,N,0
+1253,Thompson Ridge,A,Y,0
+1254,Thornton,A,Y,0
+1255,Thorp,P,Y,1
+1256,Thrapp Mountain,P,Y,1
+1257,Tieton,A,Y,0
+1258,Tieton Basin,A,Y,0
+1259,Tiffany Mountain,P,Y,1
+1260,Timber Mountain,A,N,0
+1261,Timberwolf Mountain,A,Y,0
+1262,Tiptop,P,N,1
+1263,Toleak Point,A,N,0
+1264,Toledo,A,N,0
+1265,Tonasket,P,Y,1
+1266,Toppenish,A,Y,0
+1267,Toppenish Mountain,A,Y,0
+1268,Toppenish SW,A,Y,0
+1269,Toroda,A,N,0
+1270,Touchet,P,Y,1
+1271,Toutle,A,N,0
+1272,Toutle Mountain,A,N,0
+1273,Tower Rock,A,N,0
+1274,Trefry Canyon,P,Y,1
+1275,Trinity,A,N,0
+1276,Trout Lake,A,N,0
+1277,Troy,P,N,1
+1278,Tucannon,P,Y,1
+1279,Tulalip,A,N,0
+1280,Tule Prong,A,Y,0
+1281,Tumtum,A,Y,0
+1282,Tumwater,A,N,0
+1283,Tunk Mountain,P,Y,1
+1284,Tunnel Island,A,N,0
+1285,Turner,P,Y,1
+1286,Turtle Lake,A,Y,0
+1287,Tweedie,A,N,0
+1288,Twin Buttes,A,Y,0
+1289,Twin Lakes,A,N,0
+1290,Twin Rivers,A,Y,0
+1291,Twin Sisters Mountain,A,Y,0
+1292,Twisp East,P,Y,1
+1293,Twisp West,P,Y,1
+1294,Tyee Mountain,P,N,1
+1295,Tyler,A,Y,0
+1296,Tyler Peak,A,Y,0
+1297,Umatilla,P,N,1
+1298,Umbrella Creek,A,Y,0
+1299,Uncas,A,N,0
+1300,Union,A,N,0
+1301,Uniontown,P,Y,1
+1302,Upper Naselle River,A,N,0
+1303,Utsalady,A,Y,0
+1304,Vail,A,N,0
+1305,Valley,A,Y,0
+1306,Valley Grove,P,Y,1
+1307,Van Creek,P,N,1
+1308,Vance Creek,A,N,0
+1309,Vancouver,A,Y,0
+1310,Vanson Peak,A,N,0
+1311,Vantage,P,Y,1
+1312,Vashon,A,N,0
+1313,Vaughn,A,Y,0
+1314,Verlot,A,N,0
+1315,Vernita Bridge,P,Y,1
+1316,Viola,A,N,0
+1317,Violet Prairie,A,N,0
+1318,Vulcan Mountain,A,N,0
+1319,Wades Bar,P,Y,1
+1320,Wagner Lake,P,Y,1
+1321,Wahatis Peak,P,Y,1
+1322,Wahkiacus,A,Y,0
+1323,Wahpenayo Peak,A,N,0
+1324,Waitsburg,P,Y,1
+1325,Waitsburg NW,P,Y,1
+1326,Waitts Lake,A,Y,0
+1327,Walla Walla,P,Y,1
+1328,Wallace Lake,A,N,0
+1329,Wallula,P,Y,1
+1330,Walupt Lake,A,N,0
+1331,Wapato,A,Y,0
+1332,Warden,P,Y,1
+1333,Warrenton,A,N,0
+1334,Washington Pass,A,Y,0
+1335,Washougal,A,Y,0
+1336,Washtucna North,P,Y,1
+1337,Washtucna South,P,Y,1
+1338,Waterman,P,N,1
+1339,Waterville,P,Y,1
+1340,Wauconda Summit,A,Y,0
+1341,Waukon,A,Y,0
+1342,Webber Canyon,P,Y,1
+1343,Weber,P,Y,1
+1344,Weddle Canyon,A,Y,0
+1345,Weissenfels Ridge,P,Y,1
+1346,Welker Peak,A,Y,0
+1347,Welland,P,Y,1
+1348,Wellesley Peak,A,N,0
+1349,Wellington Peak,A,Y,0
+1350,Wellpinit,A,Y,0
+1351,Wells Dam,P,Y,1
+1352,Wenaha Forks,P,N,1
+1353,Wenas Lake,A,Y,0
+1354,Wenatchee,P,N,1
+1355,Wenatchee Heights,P,N,1
+1356,West Bar,P,Y,1
+1357,West of Paterson,P,N,1
+1358,West of Pysht,A,Y,0
+1359,West of Washtucna,P,Y,1
+1360,Western,A,N,0
+1361,Westport,A,N,0
+1362,Wheeler,P,Y,1
+1363,Wheeler NE,P,Y,1
+1364,Whiskey Dick Mountain,P,Y,1
+1365,White Chuck Mountain,A,N,0
+1366,White Lakes,P,Y,1
+1367,White Mud Lake,A,Y,0
+1368,White Pass,A,N,0
+1369,White Pine Buttes,A,Y,0
+1370,White River Park,A,Y,0
+1371,White Salmon,A,N,0
+1372,White Swan,A,Y,0
+1373,Whitehorse Mountain,A,N,0
+1374,Whitestone Rock,A,N,0
+1375,Whitstran,P,Y,1
+1376,Whitstran NE,P,Y,1
+1377,Whitstran SE,P,Y,1
+1378,Wilbur,A,Y,0
+1379,Wilcox,A,Y,0
+1380,Wildcat Lake,A,N,0
+1381,Wildwood,A,N,0
+1382,Wiley City,A,Y,0
+1383,Wilkeson,A,Y,0
+1384,Willard,A,N,0
+1385,Willy Dick Canyon,A,Y,0
+1386,Wilson Creek,P,Y,1
+1387,Wilson Creek NW,P,Y,1
+1388,Wilson Creek SE,P,Y,1
+1389,Wilson Creek SW,P,Y,1
+1390,Winchester,P,Y,1
+1391,Winchester NE,P,Y,1
+1392,Winchester Peak,A,N,0
+1393,Winchester SE,P,Y,1
+1394,Winchester SW,P,Y,1
+1395,Windy Point,A,Y,0
+1396,Winesap,P,N,1
+1397,Winfield Creek,A,N,0
+1398,Winlock,A,N,0
+1399,Winona,A,Y,0
+1400,Winters Mountain,A,N,0
+1401,Winthrop,P,Y,1
+1402,Winton,P,N,1
+1403,Wishram,A,Y,0
+1404,Withrow,P,Y,1
+1405,Wolf Point,A,N,0
+1406,Wood Gulch,A,Y,0
+1407,Wooded Island,P,Y,1
+1408,Woodland,A,N,0
+1409,Woolford Creek,A,N,0
+1410,Wymer,P,Y,1
+1411,Wynoochee Lake,A,N,0
+1412,Wynoochee Valley NE,A,N,0
+1413,Wynoochee Valley NW,A,N,0
+1414,Wynoochee Valley SW,A,N,0
+1415,Yacolt,A,Y,0
+1416,Yakima East,A,Y,0
+1417,Yakima West,A,Y,0
+1418,Yale Dam,A,Y,0
+1419,Yesmowit Canyon,A,Y,0
+1420,Zangar Junction,P,Y,1
+1421,Zumwalt,P,Y,1

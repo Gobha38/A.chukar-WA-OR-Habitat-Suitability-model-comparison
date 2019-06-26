@@ -7,7 +7,7 @@
 ### code chunk number 1: clear
 ###################################################
 
-setwd("~/Desktop/A.chukar-WA-OR-Habitat-Suitability-model-comparison-master")
+#setwd("~/Desktop/A.chukar-WA-OR-Habitat-Suitability-model-comparison-master")
 
 rm(list=ls(all=TRUE))
 
@@ -45,7 +45,7 @@ library(maps)
 
 # Import LCT Raster 
 
-LCTR <- raster("/LCType.tif", values = TRUE)  # From macbook
+LCTR <- raster("./LCType.tif", values = TRUE)  # From macbook
 #LCTR
 
 
@@ -72,7 +72,9 @@ Model_CRS <- crs(LCTR)
 
 ##### USGS 1:24,000 Quadrangle Polygon
 
-Quad24_OR <-readShapePoly("/Users/Austin/Downloads/map_indexes_QD24K_or_3669477_01/map_indexes\\quads24k_a_or.shp")
+#Quad24_OR <-readShapePoly("/map_indexes_QD24K_or_3669477_01/map_indexes\\quads24k_a_or.shp")
+
+Quad24_OR <-readShapePoly("map_indexes_QD24K_or_3667989_01/map_indexes\\quads24k_a_or.shp")
 Quad24_OR
 
 # Check  crs of layer
@@ -170,14 +172,14 @@ natcrop <- aggregate(NAT_CROP~name,data=Sheet1OR,FUN=sum)
 snow <- aggregate(SNOW~name,data=Sheet1OR,FUN=sum)
 bar <- aggregate(BAR~name,data=Sheet1OR,FUN=sum)
   
-Sheet1 <- Reduce(function(x, y) merge(x, y, all=TRUE), 
+LAND <- Reduce(function(x, y) merge(x, y, all=TRUE), 
                  list( wat, enfor, ebfor, dnfor, dbfor, mixfor,
                        clshb, opshb, woodsav, sav, gra,
                        wetl, crop, urb, natcrop, snow, bar) )
 
 
 
-Sheet1
+LAND
 
 
 detach(package:tidyr, unload=TRUE)
@@ -248,7 +250,7 @@ ELEV <- ELEV[c(1,2,4,6)]
 ELEV
 
 
-Datacb1 <- merge( Sheet1, ELEV, by = "name", all = TRUE )
+Datacb1 <- merge( LAND, ELEV, by = "name", all = TRUE )
 Datacb1
 #write.csv(Datacb1, "Data sample 1")
 
@@ -368,11 +370,11 @@ CLIM
 #names(CLIM) <- c("name", "TMAX", "TAVG", "TMIN", "PREC" )
 #CLIM
 
-# Add CLIM data to Sheet1 (Landcover data)
+# Add CLIM data to LAND (Landcover data)
 Datacb3 <- merge( Datacb2, CLIM, by = "name", all = TRUE )
 Datacb3
 
-write.csv(Datacb3, "A.chukar-Variables-OR-24K")
+write.csv(Datacb3, "A.chukar-Variables-OR-24K.csv")
 
 detach(package:tidyr, unload=TRUE)
 ##########################################################################
