@@ -1,6 +1,6 @@
 # Creator: Austin M. Smith (amsmith11@usf.edu)
 
-# Journal:  Journal of Wildlife Management  
+# Journal:  Biological Invasions   
 
 # Title: "Machine learning for game bird site selection: case for Chukar.
 
@@ -114,9 +114,9 @@ test.Data <- data.frame( test.WA.NoGal[ 2:23] )
 
 # set the training parameters for model learning
 # set the training parameters for model learning
-TrainingParameters <- trainControl( method = "repeatedcv",  # cross vailidation
+TrainingParameters <- trainControl( method = "repeatedcv",  # cross vailidation -  repeated 5 times
                                     number = 5  ,           # number of folds/
-                                    repeats = 5 ,          # repeat procedure 10 times
+                                    repeats = 5 ,          # repeat procedure 5 times
                                     classProbs =  TRUE,     # outputs for choropleth
                                     savePredictions = TRUE,
                                     
@@ -163,7 +163,8 @@ model.Ensemble <- caretEnsemble(model.Ensemble.list,
                                 metric = "ROC",
                                 preProcess = c( "scale", "center" ))
 
-summary(model.Ensemble)
+summary(model.Ensemble)  # Collection of ROC Scores al ALLL models - Training 
+
 
 
 ###-----------------------------------------------------------------------------------------------------------------------
@@ -198,7 +199,7 @@ summary(model.Ensemble)
 # This is for the testing set, WA 
 # Calculate AUC for all six models and compare 
 library("caTools")
-test.probs <- lapply(model.Ensemble.list, predict, newdata=test.Data, type="prob")
+test.probs <- lapply(model.Ensemble.list, predict, newdata=test.Data, type="prob")  # WA test data 
 test.probs <- lapply(test.probs, function(x) x[,"P"])
 test.probs <- data.frame(test.probs)
 ens.probs <- predict(model.Ensemble, newdata=test.Data, type="prob")
@@ -206,7 +207,11 @@ test.probs$ensemble <-  ens.probs
 par(mar=c(3,3,3,3))
 caTools::colAUC(test.probs, test.Data$Chukar.Occurrence, plotROC=TRUE) # creates ROC curves plots
 
+# Above generates AUC for test data 
 
+
+## TO   MEASURE ACCURACY FOR TEST DATA
+## -----------------------------------------------------------
 
 # # Run the test.Data through each model
 ## Calculates P/A
@@ -266,7 +271,7 @@ confusionMatrix(test.Ensemble  , test.Data$Chukar.Occurrence, positive="P" )
 ###-----------------------------------------------------------------------------------------------------------------------
 
 
-## Validation of OR for individual models
+## PREDICT OR for individual models
 ######## ######## ######## ######## ######## ######## ######## ########
 
 
@@ -283,7 +288,7 @@ model.val
 
 
 OR.val.probs  <- cbind.data.frame(True, model.val) 
-names(OR.val.probs) <- c( "Quadname", "True", "GLM", "SVM", "RF", "ANN", "GBM", "Ensemble" )
+names(OR.val.probs) <- c( "Quadname", "True", "GLM", "GBM", "ANN", "RF", "SVM", "Ensemble" )
 
 
 ## Validation of OR for individual models Ensemble  
@@ -296,7 +301,7 @@ Val.ANN <-data.frame(predict( model.Ensemble$models$nnet ,  newdata = OR.ds ))
 Val.RF <-data.frame(predict( model.Ensemble$models$rf,  newdata = OR.ds ))
 Val.SVM <-data.frame(predict( model.Ensemble$models$svmPoly, newdata = OR.ds ))
 Val.Ensemble <- data.frame(predict( model.Ensemble  , newdata = OR.ds  ))
-Val.Ensemble
+
 # 
 
 
@@ -305,8 +310,8 @@ Val.Ensemble
 True <- data.frame(OR.Original[1], OR.Original[23])
 
 # Create single data.frame with all OR.ds P/A predictions
-Complete.results <- cbind.data.frame(True, Val.GLM, Val.SVM, Val.RF, Val.ANN, Val.GBM, Val.Ensemble )
-names(Complete.results) <- c( "Quadname", "True", "GLM", "SVM", "RF", "ANN", "GBM", "Ensemble" )
+Complete.results <- cbind.data.frame(True, Val.GLM, Val.GBM, Val.ANN, Val.RF, Val.SVM, Val.Ensemble )
+names(Complete.results) <- c( "Quadname", "True", "GLM", "GBM", "ANN","RF", "SVM", "Ensemble" )
 Complete.results
 
 
@@ -333,11 +338,11 @@ confusionMatrix(Complete.results$Ensemble , Complete.results$True, positive="P" 
 ### OREGON
 
 #OR P/A
-write.csv(Complete.results,  "Complete-OR-Val.PA-Data-Original.csv")
+write.csv(Complete.results,  "Complete-OR-Val.PA-Data-Original-2.csv")
 
 
 #OR Probs
-write.csv(OR.val.probs,  "Complete-OR-Val.Prob-Data-Original.csv")
+write.csv(OR.val.probs,  "Complete-OR-Val.Prob-Data-Original-2.csv")
 
 
 ###-----------------------------------------------------------------------------------------------------------------------
